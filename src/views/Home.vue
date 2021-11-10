@@ -15,7 +15,7 @@
         style="min-height: 100vh; min-width: 72%; background-size: cover"
         class="d-flex align-center px-16"
         :style="{
-          backgroundImage: `url(${require('@/assets/imgs/hero_bg.png')})`,
+          backgroundImage: `url(${require('@/assets/imgs/hero_bg.png.webp')})`,
         }"
       >
         <v-container class="mx-16 pl-8">

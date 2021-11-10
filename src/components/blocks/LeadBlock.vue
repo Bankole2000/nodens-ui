@@ -1,6 +1,6 @@
 <template>
   <div class="lead-block">
-    <v-img :aspect-ratio="1" class="rounded-xl mr-4" :src="require(`@/assets/imgs/${lead.image}.jpg`)">
+    <v-img :aspect-ratio="1" class="rounded-xl mr-4" :src="require(`@/assets/imgs/${lead.image}.jpg.webp`)">
     <template v-slot:placeholder>
         <v-row class="fill-height ma-0" align="center" justify="center">
           <v-progress-circular
