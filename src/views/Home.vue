@@ -200,11 +200,13 @@
           <p
             class="
               font-weight-bold
-              display-3
+            
               text-left
               accent--text
               text--darken-1
+              px-4
             "
+            :class="$vuetify.breakpoint.smAndUp ? 'display-3': 'display-2'"
           >
             Our Products
           </p>
@@ -220,11 +222,13 @@
           <p
             class="
               font-weight-bold
-              display-3
+              
               text-left
               accent--text
               text--darken-1
+              px-4
             "
+            :class="$vuetify.breakpoint.smAndUp ? 'display-3': 'display-2'"
           >
             Leadership
           </p>
