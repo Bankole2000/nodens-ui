@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
+import Home from '../views/Home.vue'
 import InvestorsPage from "../views/Investors.vue";
 import ProductsPage from "../views/Products.vue";
 import InsightsPage from "../views/Insights.vue";
-import TimelinePage from "../views/Timeline.vue";
+// import TimelinePage from "../views/Timeline.vue";
 
 Vue.use(VueRouter)
 
@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/',
     name: 'pages.home',
-    component: TimelinePage
+    component: Home
   },
   {
     path: '/investors',

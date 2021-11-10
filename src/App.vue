@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <Navbar />
+    <!-- <Navbar v-if="$route.name != 'page.home'" /> -->
+    <TransparentNavbar />
     <v-main>
       <router-view/>
     </v-main>
@@ -9,10 +10,14 @@
 </template>
 
 <script>
-import Navbar from './components/common/Navbar.vue';
+// import Navbar from './components/common/Navbar.vue';
+import TransparentNavbar from './components/common/TransparentNavbar.vue';
 
 export default {
-  components: { Navbar },
+  components: { 
+    // Navbar, 
+    TransparentNavbar 
+    },
   name: 'App',
 
   data: () => ({
