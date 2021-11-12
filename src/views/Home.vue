@@ -295,7 +295,7 @@ export default {
           logo: "nodcredit",
           product: {
             title: "NodCredit",
-            desc: "Providing easy access to quick credit. Get your loans in less than 24 hours.",
+            desc: "Facilitating seamless access to nano loans. Get your loans in less than 24 hours.",
             link: "https://nodcredit.com",
           },
         },
@@ -303,7 +303,7 @@ export default {
           logo: "nodtransfer",
           product: {
             title: "NodTransfer",
-            desc: "Safest, and fastest way to transfer money in and out of Africa - at the lowest fees.",
+            desc: "The safest and quickest way to transfer money accross borders at competitive rates.",
             link: "https://nodtransfer.com",
           },
         },
@@ -319,7 +319,7 @@ export default {
           logo: "gemini",
           product: {
             title: "Gemini",
-            desc: "A new way to shop. Providing an API for Buy Now, Pay Later shopping experience.",
+            desc: "Prividing customers with easy access to device and gadget financing at no interest rate.",
             link: "https://gemini.com",
           },
         },
@@ -329,16 +329,19 @@ export default {
           image: "lead1",
           title: "Cofounder, Execution and Management",
           name: "Abayomi Olofinlua",
+          linkedIn: 'https://www.linkedin.com/in/abayomi-olofinlua-513aa459'
         },
         {
           image: "lead2",
           title: "Cofounder, Investments and Marketing",
           name: "Olumide Oluwabiyi",
+          linkedIn: 'https://www.linkedin.com/in/olumide-oluwabiyi-750404a6'
         },
         {
           image: "lead3",
           title: "Cofounder, Tech and Products",
           name: "Timothy Chukwuka",
+          linkedIn: 'https://www.linkedin.com/in/timchuks'
         },
       ],
     };

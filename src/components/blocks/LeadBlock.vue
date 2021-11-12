@@ -13,7 +13,7 @@
       </template>
     </v-img>
     <p class="grey--text mb-1 mt-4 pl-2">{{lead.title}}</p>
-    <p class="headline pl-2">{{lead.name}}</p>
+    <p class="headline pl-2" style="cursor: pointer" @click="gotoURL(lead.linkedIn)">{{lead.name}}</p>
   </div>
 </template>
 
@@ -25,10 +25,16 @@ export default {
       default: () => ({
         image: 'lead1',
         title: 'CEO',
-        name: 'Jane Doe'
+        name: 'Jane Doe', 
+        linkedIn: 'https://linkedin.com'
       })
     }
-  }
+  },
+   methods: {
+    gotoURL(site) {
+      window.open(site, "_blank");
+    },
+  },
 }
 </script>
 
