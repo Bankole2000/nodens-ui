@@ -6,7 +6,7 @@ module.exports = {
       return args;
     });
   },
-  publicPath: process.env.NODE_ENV === "production" ? "/nodens-ui/" : "/"
+  publicPath: process.env.NODE_ENV === "production" ? "/" : "/"
   // publicPath: '',
   // baseUrl: '/projects/vue/webpieces/dist/',
 };

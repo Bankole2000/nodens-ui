@@ -44,17 +44,16 @@
               class="white--text mt-4 mb-8"
               :class="{ headline: $vuetify.breakpoint.smAndUp }"
             >
-              Mission: Et ridiculus elit feugiat sit venenatis proin phare
-              ullamcorper sem feugiat venenatis.
+              Solving financial inclusion problems through innovation.
             </p>
-            <div>
+            <v-col cols="12">
               <v-btn
                 x-large
                 class="rounded-xl white--text text-capitalize secondary"
                 depressed
                 >Learn more</v-btn
               >
-            </div>
+            </v-col>
           </v-row>
         </v-container>
       </div>
@@ -132,10 +131,10 @@
       </v-slide-x-transition>
     </div>
     <v-container>
-      <v-row class="py-16">
+      <v-row class="py-16 my-8">
         <v-col cols="12">
           <p
-            class="font-weight-bold text-h4 accent--text mb-8"
+            class="font-weight-bold text-h4 accent--text mb-16"
             :class="{ 'text-center': $vuetify.breakpoint.smAndDown }"
           >
             Trusted by Global Investors
@@ -189,15 +188,14 @@
           </v-row>
         </v-col>
       </v-row>
-      <v-row class="mb-8">
+      <v-row class="mb-16">
         <v-col cols="12">
           <p
             v-if="$vuetify.breakpoint.mdAndUp"
             class="text-h1 mt-8 font-weight-regular accent--text"
             style="line-height: 8rem"
           >
-            Mission: Et feugiat sit proin phare ullamcorper sem feugiat
-            venenatis.
+            Providing speedy and responsive financial services while generating substantial value.
           </p>
           <p
             v-else
@@ -205,18 +203,18 @@
             style="line-height: 4rem"
           >
             <strong>Our Mission:</strong> <br />
-            Et feugiat sit proin phare ullamcorper sem feugiat venenatis.
+            Providing speedy and responsive financial services while generating substantial value.
           </p>
         </v-col>
       </v-row>
       <v-row class="my-12">
-        <v-col cols="12" lg="4" sm="6" v-for="i in 3" :key="i">
+        <v-col cols="12" lg="4" sm="6" v-for="(item, i) in stats" :key="i">
           <div
             class="d-flex align-center"
             :class="{ 'flex-column': $vuetify.breakpoint.xs }"
           >
-            <p class="display-3 font-weight-thin accent--text">$5.8M</p>
-            <p class="headline ml-4 accent--text">Credit & Insurance</p>
+            <p class="display-3 font-weight-thin accent--text">{{item.value}}</p>
+            <p class="headline ml-4 accent--text">{{item.metric}}</p>
           </div>
         </v-col>
       </v-row>
@@ -278,6 +276,13 @@ export default {
         show3: false,
         show4: false,
       },
+      stats: [
+        {metric: 'Total Loans Disbursed', value: '$3.5m'},
+        {metric: 'Returns to Investors', value: '$2.2m'},
+        {metric: 'Registered Users', value: '300k+'},
+        {metric: 'Total No of Staff', value: '50'},
+
+      ],
       investorLogos: [
         "allianz.svg",
         "carrefour.svg",
@@ -322,18 +327,18 @@ export default {
       leadership: [
         {
           image: "lead1",
-          title: "CEO",
-          name: "Jane Doe",
+          title: "Cofounder, Execution and Management",
+          name: "Abayomi Olofinlua",
         },
         {
           image: "lead2",
-          title: "COO",
-          name: "Emeka Doe",
+          title: "Cofounder, Investments and Marketing",
+          name: "Olumide Oluwabiyi",
         },
         {
           image: "lead3",
-          title: "CTO",
-          name: "Doe Doe",
+          title: "Cofounder, Tech and Products",
+          name: "Timothy Chukwuka",
         },
       ],
     };
