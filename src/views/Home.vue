@@ -20,7 +20,7 @@
         }"
       >
         <v-container class="pl-8">
-          <v-row class="pl-4 pt-8">
+          <v-row class="pl-16 pt-8" transition="slide-y-transition">
             <p
               class="font-weight-bold white--text mb-0"
               :style="{
@@ -81,7 +81,13 @@
           <v-row align="center" justify="end" class="mt-8">
             <v-col cols="3" v-for="(product, i) in products" :key="i">
               <div class="d-flex align-center justify-center">
-                <IconCard :logo="product.logo" :size="80" />
+                <v-scroll-x-transition>
+                  <IconCard
+                    v-show="show[`show${i+1}`]"
+                    :logo="product.logo"
+                    :size="80"
+                  />
+                </v-scroll-x-transition>
               </div>
             </v-col>
           </v-row>
@@ -92,26 +98,38 @@
         style="min-height: 100vh; min-width: 30%"
         class="white"
       ></div>
-      <IconCard
-        v-if="$vuetify.breakpoint.smAndUp"
-        style="position: absolute; top: 60px; left: 35%"
-        logo="nodcredit"
-      />
-      <IconCard
-        v-if="$vuetify.breakpoint.smAndUp"
-        style="position: absolute; top: 30px; left: 75%"
-        logo="nodtransfer"
-      />
-      <IconCard
-        v-if="$vuetify.breakpoint.smAndUp"
-        style="position: absolute; top: 220px; left: calc(72% - 50px)"
-        logo="gemini"
-      />
-      <IconCard
-        v-if="$vuetify.breakpoint.smAndUp"
-        style="position: absolute; top: 60%; left: 85%"
-        logo="nodcheckout"
-      />
+      <v-slide-x-transition>
+        <IconCard
+          v-show="show.show1"
+          v-if="$vuetify.breakpoint.smAndUp"
+          style="position: absolute; top: 60px; left: 35%"
+          logo="nodcredit"
+        />
+      </v-slide-x-transition>
+      <v-slide-x-transition>
+        <IconCard
+          v-show="show.show2"
+          v-if="$vuetify.breakpoint.smAndUp"
+          style="position: absolute; top: 30px; left: 75%"
+          logo="nodtransfer"
+        />
+      </v-slide-x-transition>
+      <v-slide-x-transition>
+        <IconCard
+          v-show="show.show3"
+          v-if="$vuetify.breakpoint.smAndUp"
+          style="position: absolute; top: 220px; left: calc(72% - 50px)"
+          logo="gemini"
+        />
+      </v-slide-x-transition>
+      <v-slide-x-transition>
+        <IconCard
+          v-show="show.show4"
+          v-if="$vuetify.breakpoint.smAndUp"
+          style="position: absolute; top: 60%; left: 85%"
+          logo="nodcheckout"
+        />
+      </v-slide-x-transition>
     </div>
     <v-container>
       <v-row class="py-16">
@@ -181,15 +199,22 @@
             Mission: Et feugiat sit proin phare ullamcorper sem feugiat
             venenatis.
           </p>
-          <p v-else class="text-h3 text-center accent--text" style="line-height: 4rem;">
-            <strong>Our Mission:</strong> <br /> Et feugiat sit proin phare ullamcorper sem feugiat
-            venenatis.
+          <p
+            v-else
+            class="text-h3 text-center accent--text"
+            style="line-height: 4rem"
+          >
+            <strong>Our Mission:</strong> <br />
+            Et feugiat sit proin phare ullamcorper sem feugiat venenatis.
           </p>
         </v-col>
       </v-row>
       <v-row class="my-12">
         <v-col cols="12" lg="4" sm="6" v-for="i in 3" :key="i">
-          <div class="d-flex align-center" :class="{'flex-column': $vuetify.breakpoint.xs }">
+          <div
+            class="d-flex align-center"
+            :class="{ 'flex-column': $vuetify.breakpoint.xs }"
+          >
             <p class="display-3 font-weight-thin accent--text">$5.8M</p>
             <p class="headline ml-4 accent--text">Credit & Insurance</p>
           </div>
@@ -198,15 +223,8 @@
       <v-row class="mt-16">
         <v-col col="12">
           <p
-            class="
-              font-weight-bold
-            
-              text-left
-              accent--text
-              text--darken-1
-              px-4
-            "
-            :class="$vuetify.breakpoint.smAndUp ? 'display-3': 'display-2'"
+            class="font-weight-bold text-left accent--text text--darken-1 px-4"
+            :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'display-2'"
           >
             Our Products
           </p>
@@ -220,15 +238,8 @@
       <v-row class="mt-16">
         <v-col col="12">
           <p
-            class="
-              font-weight-bold
-              
-              text-left
-              accent--text
-              text--darken-1
-              px-4
-            "
-            :class="$vuetify.breakpoint.smAndUp ? 'display-3': 'display-2'"
+            class="font-weight-bold text-left accent--text text--darken-1 px-4"
+            :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'display-2'"
           >
             Leadership
           </p>
@@ -261,6 +272,12 @@ export default {
   },
   data() {
     return {
+      show: {
+        show1: false,
+        show2: false,
+        show3: false,
+        show4: false,
+      },
       investorLogos: [
         "allianz.svg",
         "carrefour.svg",
@@ -322,6 +339,18 @@ export default {
     };
   },
   mounted() {
+    setTimeout(() => {
+      this.show.show1 = true;
+    }, 500);
+    setTimeout(() => {
+      this.show.show2 = true;
+    }, 700);
+    setTimeout(() => {
+      this.show.show3 = true;
+    }, 900);
+    setTimeout(() => {
+      this.show.show4 = true;
+    }, 1100);
     console.log({ vuetify: this.$vuetify });
   },
 };
