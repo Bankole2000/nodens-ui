@@ -280,7 +280,7 @@ export default {
         {metric: 'Total Loans Disbursed', value: '$3.5m'},
         {metric: 'Returns to Investors', value: '$2.2m'},
         {metric: 'Registered Users', value: '300k+'},
-        {metric: 'Total No of Staff', value: '50'},
+        // {metric: 'Total No of Staff', value: '50'},
 
       ],
       investorLogos: [
@@ -319,8 +319,16 @@ export default {
           logo: "gemini",
           product: {
             title: "Gemini",
-            desc: "Prividing customers with easy access to device and gadget financing at no interest rate.",
+            desc: "Providing customers with easy access to device and gadget financing at no interest rate.",
             link: "https://gemini.com",
+          },
+        },
+        {
+          logo: "nodcash",
+          product: {
+            title: "NodCash App",
+            desc: "A new way of sending, requesting and spending, combining crypto and leveraging our tech rails, this product sets your money free.",
+            link: "https://nodcashapp.com",
           },
         },
       ],

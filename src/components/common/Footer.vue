@@ -13,9 +13,11 @@
                 justify-content: space-between;
               "
             >
-              <v-avatar color="primary">
-                <v-icon color="white">mdi-instagram</v-icon>
-              </v-avatar>
+              
+                <v-avatar color="primary">
+                  <v-icon color="white">mdi-instagram</v-icon>
+                </v-avatar>
+              
               <v-avatar color="primary">
                 <v-icon color="white">mdi-twitter</v-icon>
               </v-avatar>
@@ -65,7 +67,6 @@
               <a href="">NodTransfer</a>
             </p>
           </v-col>
-          
         </v-row>
         <v-row>
           <p class="text-center mb-16 mt-8">
@@ -82,6 +83,7 @@
 // import NodCheckoutBlueLogo from "../../Common/NodCheckoutBlueLogo.vue";
 export default {
   // components: { NodCheckoutBlueLogo },
+  
 };
 </script>
 
