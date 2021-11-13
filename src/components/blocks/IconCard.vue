@@ -18,8 +18,8 @@
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular
-              size="70"
-              width="5"
+              size="40"
+              width="4"
               indeterminate
               color="secondary lighten-1"
             ></v-progress-circular>

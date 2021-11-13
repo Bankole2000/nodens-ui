@@ -1,6 +1,6 @@
 <template>
   <div class="lead-block" :class="{'px-4': $vuetify.breakpoint.xs}">
-    <v-img :aspect-ratio="1" class="rounded-xl" :class="{'mr-4': $vuetify.breakpoint.lgAndUp}" :src="require(`@/assets/imgs/${lead.image}.png`)">
+    <v-img :aspect-ratio="1/1.25" class="rounded-xl" :class="{'mr-4': $vuetify.breakpoint.lgAndUp}" :src="require(`@/assets/imgs/${lead.image}.webp`)">
     <template v-slot:placeholder>
         <v-row class="fill-height ma-0" align="center" justify="center">
           <v-progress-circular

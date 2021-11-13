@@ -334,19 +334,19 @@ export default {
       ],
       leadership: [
         {
-          image: "lead1",
+          image: "lead1.jpeg",
           title: "Cofounder, Execution and Management",
           name: "Abayomi Olofinlua",
           linkedIn: 'https://www.linkedin.com/in/abayomi-olofinlua-513aa459'
         },
         {
-          image: "lead2",
+          image: "lead2.jpg",
           title: "Cofounder, Investments and Marketing",
           name: "Olumide Oluwabiyi",
           linkedIn: 'https://www.linkedin.com/in/olumide-oluwabiyi-750404a6'
         },
         {
-          image: "lead3",
+          image: "lead3.jpeg",
           title: "Cofounder, Tech and Products",
           name: "Timothy Chukwuka",
           linkedIn: 'https://www.linkedin.com/in/timchuks'

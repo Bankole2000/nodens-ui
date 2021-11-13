@@ -4,7 +4,14 @@
       class="d-flex align-center justify-start my-12"
       :class="{ 'flex-column': $vuetify.breakpoint.xs }"
     >
-      <div class="d-flex">
+           
+
+      <div class="d-flex align-center">
+        <!-- <a href="https://nodensinc.com">
+          <v-avatar tile size="36" class="mr-4 mb-2">
+            <v-img :src="require('@/assets/imgs/logos/logo.png.webp')" />
+          </v-avatar>
+        </a> -->
         <a
           :href="`https://${link}.com/nodensinc`"
           v-for="(link, i) in socialLinks"
