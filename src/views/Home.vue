@@ -269,7 +269,11 @@
       </v-row>
       <v-row>
         <v-col cols="12" md="6" v-for="(item, i) in products" :key="i">
-          <NodensProductCard :logo="item.logo" :product="item.product" />
+          <NodensProductCard
+            :logo="item.logo"
+            :product="item.product"
+            :productLinks="item.productLinks"
+          />
         </v-col>
       </v-row>
       <v-row class="mt-16">
@@ -336,6 +340,18 @@ export default {
             desc: "Facilitating seamless access to nano loans. Get your loans in less than 24 hours.",
             link: "https://nodcredit.com",
           },
+          productLinks: [
+            {
+              text: "Go to Loans",
+              link: "https://nodcredit.com/loan",
+              linkAlt: null,
+            },
+            {
+              text: "Go to Invest",
+              link: "https://nodcredit.com/invest",
+              linkAlt: null,
+            },
+          ],
         },
         {
           logo: "nodtransfer",
@@ -344,6 +360,18 @@ export default {
             desc: "The safest and quickest way to transfer money accross borders at competitive rates.",
             link: "https://nodtransfer.com",
           },
+          productLinks: [
+            {
+              text: "Go to Money Transfer",
+              link: "https://nodtransfer.com",
+              linkAlt: null,
+            },
+            {
+              text: "Go to Nodtransfer Credit",
+              link: "https://nodtransfer.com/nodtransfer-credit",
+              linkAlt: null,
+            },
+          ],
         },
         {
           logo: "nodcheckout",
@@ -352,6 +380,13 @@ export default {
             desc: "A new way to shop. Providing an API for Buy Now, Pay Later shopping experience.",
             link: "https://nodcheckout.com",
           },
+          productLinks: [
+            {
+              text: "Go to Checkout by NodCredit",
+              link: "https://nodcheckout.com/for-businesses",
+              linkAlt: null,
+            },
+          ],
         },
         // {
         //   logo: "gemini",
@@ -368,6 +403,13 @@ export default {
             desc: "A new way of sending, requesting and spending, combining crypto and leveraging our tech rails, this product sets your money free.",
             link: "https://nodcashapp.com",
           },
+          productLinks: [
+            {
+              text: null,
+              link: null,
+              linkAlt: "Private Release - in Beta",
+            },
+          ],
         },
       ],
       leadership: [
