@@ -225,7 +225,7 @@
         <v-col cols="12">
           <p
             v-if="$vuetify.breakpoint.mdAndUp"
-            class="text-h1 mt-8 font-weight-regular accent--text"
+            class="text-h2 mt-8 font-weight-regular accent--text"
             style="line-height: 8rem"
           >
             <!-- Providing speedy and responsive financial services while generating
