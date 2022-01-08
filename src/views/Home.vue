@@ -383,7 +383,7 @@ export default {
           productLinks: [
             {
               text: "Go to Checkout by NodCredit",
-              link: "https://nodcheckout.com/for-businesses",
+              link: "http://nodcheckout.com/for-businesses",
               linkAlt: null,
             },
           ],
