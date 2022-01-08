@@ -208,7 +208,7 @@
           left: 0;
           height: 100%;
           width: 100%;
-          backdrop-filter: blur(5px);
+          backdrop-filter: blur(10px);
         "
       ></div>
     </div>
@@ -231,8 +231,8 @@
             style="line-height: 4rem"
           >
             <strong>Our Mission:</strong> <br />
-            Providing speedy and responsive financial services while generating
-            substantial value.
+            Providing globally competitive services with a net positive on
+            customers.
           </p>
         </v-col>
       </v-row>
