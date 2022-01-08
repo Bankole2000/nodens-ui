@@ -130,16 +130,23 @@
         />
       </v-slide-x-transition>
     </div>
+    <v-container>
+      <v-row class="pt-16 mt-8">
+        <v-col cols="12">
+          <p
+            class="font-weight-bold text-h4 accent--text mb-16"
+            :class="{ 'text-center': $vuetify.breakpoint.smAndDown }"
+          >
+            Trusted by Global Investors
+          </p>
+        </v-col>
+      </v-row>
+    </v-container>
+
     <div style="position: relative">
       <v-container>
-        <v-row class="py-16 my-8">
+        <v-row class="py-8 my-4">
           <v-col cols="12">
-            <p
-              class="font-weight-bold text-h4 accent--text mb-16"
-              :class="{ 'text-center': $vuetify.breakpoint.smAndDown }"
-            >
-              Trusted by Global Investors
-            </p>
             <v-card elevation="0" v-if="$vuetify.breakpoint.mdAndUp">
               <div class="d-flex align-center">
                 <v-img
@@ -208,7 +215,8 @@
           left: 0;
           height: 100%;
           width: 100%;
-          backdrop-filter: blur(10px);
+          background-color: rgba(255, 198, 122, 0.753);
+          backdrop-filter: blur(20px);
         "
       ></div>
     </div>
@@ -227,7 +235,7 @@
           </p>
           <p
             v-else
-            class="text-h3 text-center accent--text"
+            class="text-h3 text-center accent--text mt-16"
             style="line-height: 4rem"
           >
             <strong>Our Mission:</strong> <br />
