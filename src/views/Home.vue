@@ -208,6 +208,7 @@
           </v-col>
         </v-row>
       </v-container>
+      <!-- background-color: rgba(255, 198, 122, 0.753); -->
       <div
         style="
           position: absolute;
@@ -215,7 +216,6 @@
           left: 0;
           height: 100%;
           width: 100%;
-          background-color: rgba(255, 198, 122, 0.753);
           backdrop-filter: blur(20px);
         "
       ></div>
