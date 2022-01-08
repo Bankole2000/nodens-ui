@@ -225,11 +225,23 @@
         <v-col cols="12">
           <p
             v-if="$vuetify.breakpoint.mdAndUp"
-            class="text-h2 mt-8 font-weight-regular accent--text"
-            style="line-height: 8rem"
+            class="mt-8 font-weight-regular accent--text"
+            style="line-height: 8rem; font-size: 5rem"
           >
             <!-- Providing speedy and responsive financial services while generating
             substantial value. -->
+            <span
+              class="
+                font-weight-bold
+                text-left
+                accent--text
+                text--darken-1
+                px-4
+              "
+              :class="$vuetify.breakpoint.smAndUp ? 'display-3' : 'display-2'"
+              >Our Mission:</span
+            >
+            <br />
             Providing globally competitive services with a net positive on
             customers.
           </p>
