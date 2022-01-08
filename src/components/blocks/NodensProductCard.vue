@@ -94,8 +94,8 @@ export default {
   components: { IconCard },
   methods: {
     handleProductLinkClick(productLink) {
-      // window.open(productLink.link, "_blank");
-      console.log({ productLink });
+      window.open(productLink.link, "_blank");
+      // console.log({ productLink });
     },
   },
 };
