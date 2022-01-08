@@ -407,7 +407,7 @@ export default {
             {
               text: null,
               link: null,
-              linkAlt: "Private Release - in Beta",
+              linkAlt: "Private Release - In Beta",
             },
           ],
         },

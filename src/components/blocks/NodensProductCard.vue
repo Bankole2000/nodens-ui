@@ -35,14 +35,19 @@
             <v-icon large left>mdi-chevron-right</v-icon>
 
             <span
-              class="title text-capitalize secondary--text text-decoration-none"
+              class="
+                title
+                no-text-transform
+                secondary--text
+                text-decoration-none
+              "
               >{{ link.text }}</span
             >
           </v-btn>
           <v-btn v-else disabled large text>
             <v-icon left color="info">mdi-cog</v-icon>
 
-            <span class="title text-capitalize text-decoration-none">{{
+            <span class="title no-text-transform text-decoration-none">{{
               link.linkAlt
             }}</span>
           </v-btn>
@@ -102,4 +107,7 @@ export default {
 </script>
 
 <style>
+.no-text-transform {
+  text-transform: none;
+}
 </style>
