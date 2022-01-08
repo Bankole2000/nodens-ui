@@ -49,7 +49,9 @@ export default {
   },
   methods: {
     gotoURL(siteName) {
-      window.open(`https://${siteName}.com`, "_blank");
+      if (siteName !== "nodcash") {
+        window.open(`https://${siteName}.com`, "_blank");
+      }
     },
   },
 };
