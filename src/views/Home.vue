@@ -298,7 +298,7 @@
           </p>
         </v-col>
       </v-row>
-      <v-row class="mb-16 pb-16">
+      <v-row class="mb-16 pb-16" justify="center">
         <v-col cols="12" sm="4" v-for="(lead, i) in leadership" :key="i">
           <LeadBlock :lead="lead" />
         </v-col>
@@ -432,15 +432,27 @@ export default {
           linkedIn: "https://www.linkedin.com/in/abayomi-olofinlua-513aa459",
         },
         {
+          image: "eva.jpeg",
+          title: "Management, Data & Advisory",
+          name: "Eva Sheluhina",
+          linkedIn: "",
+        },
+        {
           image: "lead2.jpg",
           title: "Cofounder, Investments and Marketing",
           name: "Olumide Oluwabiyi",
           linkedIn: "https://www.linkedin.com/in/olumide-oluwabiyi-750404a6",
         },
         {
+          image: "vitalli.jpeg",
+          title: "Engineering, Products",
+          name: "Vitalii Khrabatyn",
+          linkedIn: "",
+        },
+        {
           image: "lead3.jpeg",
           title: "Cofounder, Tech and Products",
-          name: "Timothy Chukwuka",
+          name: "Tim Chukwuka",
           linkedIn: "https://www.linkedin.com/in/timchuks",
         },
       ],
