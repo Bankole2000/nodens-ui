@@ -354,12 +354,12 @@ export default {
           },
           productLinks: [
             {
-              text: "Go to Loans",
+              text: "Get Loans",
               link: "https://nodcredit.com/loan",
               linkAlt: null,
             },
             {
-              text: "Go to Invest",
+              text: "Invest",
               link: "https://nodcredit.com/invest",
               linkAlt: null,
             },
@@ -374,12 +374,12 @@ export default {
           },
           productLinks: [
             {
-              text: "Go to Money Transfer",
+              text: "Money Transfer",
               link: "https://nodtransfer.com",
               linkAlt: null,
             },
             {
-              text: "Go to Nodtransfer Credit",
+              text: "Nodtransfer Credit",
               link: "https://nodtransfer.com/nodtransfer-credit",
               linkAlt: null,
             },
@@ -394,7 +394,7 @@ export default {
           },
           productLinks: [
             {
-              text: "Go to Checkout by NodCredit",
+              text: "Checkout by NodCredit",
               link: "http://nodcheckout.com/for-businesses",
               linkAlt: null,
             },

@@ -23,7 +23,7 @@
       >
         {{ product.desc }}
       </p>
-      <div>
+      <div :class="$vuetify.breakpoint.mdAndUp ? 'd-flex align-center' : ''">
         <div v-for="(link, i) in productLinks" :key="i">
           <v-btn
             v-if="link.link"
@@ -32,8 +32,6 @@
             text
             color="secondary"
           >
-            <v-icon large left>mdi-chevron-right</v-icon>
-
             <span
               class="
                 title
@@ -43,6 +41,8 @@
               "
               >{{ link.text }}</span
             >
+            <v-icon size="28" right>mdi-arrow-top-right</v-icon>
+            <!-- <v-icon right>mdi-open-in-new</v-icon> -->
           </v-btn>
           <v-btn v-else disabled large text>
             <v-icon left color="info">mdi-cog</v-icon>
@@ -51,6 +51,11 @@
               link.linkAlt
             }}</span>
           </v-btn>
+          <!-- <v-icon
+            v-if="i < productLinks.length - 1 && productLinks.length > 0"
+            class="mx-4"
+            >mdi-circle</v-icon
+          > -->
         </div>
       </div>
       <!-- <a
