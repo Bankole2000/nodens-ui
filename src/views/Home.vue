@@ -437,12 +437,12 @@ export default {
           name: "Eva Sheluhina",
           linkedIn: "",
         },
-        {
-          image: "lead2.jpg",
-          title: "Cofounder, Investments and Marketing",
-          name: "Olumide Oluwabiyi",
-          linkedIn: "https://www.linkedin.com/in/olumide-oluwabiyi-750404a6",
-        },
+        // {
+        //   image: "lead2.jpg",
+        //   title: "Cofounder, Investments and Marketing",
+        //   name: "Olumide Oluwabiyi",
+        //   linkedIn: "https://www.linkedin.com/in/olumide-oluwabiyi-750404a6",
+        // },
         {
           image: "vitalli.jpeg",
           title: "Engineering, Products",
