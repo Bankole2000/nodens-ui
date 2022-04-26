@@ -1,7 +1,7 @@
 <template>
   <div
     class="home-page"
-    :style="{ marginTop: `-${navbarHeight}px`, backgroundColor: `#fafafa` }"
+    :style="{ marginTop: `-${navbarHeight}px`, backgroundColor: `#faf6f8` }"
   >
     <div
       style="
@@ -9,139 +9,87 @@
         min-width: 100vw;
         position: relative;
         display: flex;
+        
       "
+      :style="{paddingTop: `${navbarHeight}px`}"
+      
     >
-      <div
-        v-if="$vuetify.breakpoint.smAndUp"
-        style="min-height: 100vh; min-width: 72%; background-size: cover"
-        class="d-flex align-center px-16"
-        :style="{
-          backgroundImage: `url(${require('@/assets/imgs/hero_bg.png.webp')})`,
-        }"
-      >
-        <v-container class="pl-8">
-          <v-row class="pl-16 pt-8" transition="slide-y-transition">
-            <p
-              class="font-weight-bold white--text mb-0"
-              :style="{
-                lineHeight: `${
-                  $vuetify.breakpoint.mdAndUp
-                    ? '7'
-                    : $vuetify.breakpoint.smOnly
-                    ? '4'
-                    : '2'
-                }rem`,
-              }"
-              :class="{
-                'display-4': $vuetify.breakpoint.mdAndUp,
-                'display-3': $vuetify.breakpoint.smOnly,
-                'display-1': $vuetify.breakpoint.xsOnly,
-              }"
-            >
-              Creating a Future that is accessible and connected.
-            </p>
-            <p
-              class="white--text mt-4 mb-8"
-              :class="{ headline: $vuetify.breakpoint.smAndUp }"
-            >
-              Solving financial inclusion problems through innovation.
-            </p>
-            <v-col cols="12">
-              <v-btn
-                x-large
-                class="rounded-xl white--text text-capitalize secondary"
-                depressed
-                >Learn more</v-btn
-              >
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <v-card elevation="0" class="mb-5" :img="require('@/assets/imgs/newcover1.jpeg')" height="40vh" style="border-radius: 16px">
+
+            </v-card>
+          </v-col>
+          <v-col cols="6">
+            <h1>Creating a Future that is Accessible and Connected.</h1>
+          </v-col>
+          <v-col cols="6">
+            <div style="height: 100%;">
+              <h4 class="body-copy-l pr-4" style="font-weight: 400 !important; color: #6E7177;">We creating a future that is sustainable! Where you’re in control of money and connected to  resources that help better your life and people around you. Join us as we take incredible leaps to make this possible.</h4>
+              <div style="display: flex; align-items: center; justify-content: start;" class="mt-12">
+                <div class="mr-7" v-for="(topic, i) in topics" :key="i" :style="{borderRight: i < topics.length - 1 ? '2px solid #CCE3FF': 'none'}">
+                  <p style="color: #101010; font-size: 18px; line-height: 22px; font-weight: 400;" class="mb-0 mr-7">{{topic}}</p>
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <div style="width: 100vw; height: calc(100vh); position: relative; display: flex;">
+      <div style="flex: 1; height: 100%; background: #101010;"></div>
+      <div style="flex: 1; height: 100%; background-size: cover; background-position: center center;" :style="{backgroundImage: `url(${require('@/assets/imgs/newcover2.jpeg')})`}"></div>
+      <div style="position: absolute; top: 0; left: 0; width: 100vw;">
+        <v-container>
+          <v-row>
+            <v-col cols="6">
+              <div class="mt-25">
+                <p class="mb-4" style="font-size: 16px; line-height: 18.91px; letter: 12%; font-weight: 600; color: #6E7177;">OUR MISSION</p>
+                <h2 style="color: white;" class="mb-6">Providing globally competitive services with a net positive on customers.</h2>
+                <p class="pr-13 mb-16" style="font-size: 18px; line-height: 21.28px; font-weight: 400; color: #F4F6F8; letter: 1%;">Centered around good, we are seeking to provide customer-first services that ensure businesses are making profits rather than spending time worrying about capital to run their start-up.</p>
+                <div class="pt-16 d-flex align-center">
+                  <div style="flex: 1;">
+                    <h2 style="color: white;" class="mb-1">$3.5m</h2>
+                    <p style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Worth of loans disbursed</p>
+                  </div>
+                  <div style="flex: 1;">
+                    <h2 style="color: white;">$2.2m</h2>
+                    <p class="pr-16" style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Returns to investors</p>
+                  </div>
+                  <div style="flex: 1;">
+                    <h2 style="color: white;">300k+</h2>
+                    <p style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Customers onboarded</p>
+                  </div>
+                </div>
+              </div>
             </v-col>
+            <v-col cols="6"></v-col>
           </v-row>
         </v-container>
       </div>
-      <div
-        v-else
-        style="min-height: 100vh; min-width: 100%; background-size: cover"
-        class="d-flex flex-column align-center justify-center px-8 pt-16"
-        :style="{
-          backgroundImage: `url(${require('@/assets/imgs/hero_bg.png.webp')})`,
-        }"
-      >
-        <p class="white--text text-center text-h4 font-weight-bold">
-          Creating a Future that is accessible and connected.
-        </p>
-        <div>
-          <v-btn
-            block
-            x-large
-            class="secondary white--text text-capitalize rounded-xl"
-            >Learn more</v-btn
-          >
-        </div>
-        <div>
-          <v-row align="center" justify="end" class="mt-8">
-            <v-col cols="3" v-for="(product, i) in products" :key="i">
-              <div class="d-flex align-center justify-center">
-                <v-scroll-x-transition>
-                  <IconCard
-                    v-show="show[`show${i + 1}`]"
-                    :logo="product.logo"
-                    :size="80"
-                  />
-                </v-scroll-x-transition>
-              </div>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-      <div
-        v-if="$vuetify.breakpoint.lgAndUp"
-        style="min-height: 100vh; min-width: 30%"
-        class="white"
-      ></div>
-      <v-slide-x-transition>
-        <IconCard
-          v-show="show.show1"
-          v-if="$vuetify.breakpoint.smAndUp"
-          style="position: absolute; top: 60px; left: 35%"
-          logo="nodcredit"
-        />
-      </v-slide-x-transition>
-      <v-slide-x-transition>
-        <IconCard
-          v-show="show.show2"
-          v-if="$vuetify.breakpoint.smAndUp"
-          style="position: absolute; top: 30px; left: 75%"
-          logo="nodtransfer"
-        />
-      </v-slide-x-transition>
-      <v-slide-x-transition>
-        <IconCard
-          v-show="show.show3"
-          v-if="$vuetify.breakpoint.smAndUp"
-          style="position: absolute; top: 220px; left: calc(72% - 50px)"
-          logo="nodcash"
-        />
-      </v-slide-x-transition>
-      <v-slide-x-transition>
-        <IconCard
-          v-show="show.show4"
-          v-if="$vuetify.breakpoint.smAndUp"
-          style="position: absolute; top: 60%; left: 85%"
-          logo="nodcheckout"
-        />
-      </v-slide-x-transition>
+
     </div>
-    <v-container>
-      <v-row class="pt-16 mt-8">
-        <v-col cols="12">
-          <p
-            class="font-weight-bold text-h4 accent--text mb-16"
-            :class="{ 'text-center': $vuetify.breakpoint.smAndDown }"
-          >
-            Trusted by Global Investors
-          </p>
-        </v-col>
-      </v-row>
-    </v-container>
+    <div style="width: 100vw;">
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <div class="pa-24" style="background-color: #101010; border-radius: 24px;">
+              <v-row>
+                <v-col cols="7"></v-col>
+                <v-col cols="5">
+                  <div class="d-flex align-center">
+                    <h2 style="color: white;">Here's what people are saying about us</h2>
+                  </div>
+                </v-col>
+                
+              </v-row>
+
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
 
     <div style="position: relative">
       <v-container>
@@ -311,13 +259,14 @@
 
 <script>
 import { mapGetters } from "vuex";
-import IconCard from "../components/blocks/IconCard.vue";
+// import IconCard from "../components/blocks/IconCard.vue";
 import LeadBlock from "../components/blocks/LeadBlock.vue";
 import NodensProductCard from "../components/blocks/NodensProductCard.vue";
 import SmallFooter from "../components/common/SmallFooter.vue";
 
 export default {
-  components: { IconCard, NodensProductCard, LeadBlock, SmallFooter },
+
+  components: { NodensProductCard, LeadBlock, SmallFooter },
   computed: {
     ...mapGetters({
       navbarHeight: "ui/navbarHeight",
@@ -325,6 +274,7 @@ export default {
   },
   data() {
     return {
+      topics: ['Loans', 'BPNL', 'Financing', 'Cards', 'Banking'],
       show: {
         show1: false,
         show2: false,

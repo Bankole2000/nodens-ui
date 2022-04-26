@@ -21,7 +21,7 @@
           style="
             position: absolute;
             left: 0;
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: #FAF6F817;
             top: 0;
            
             width: 100%;
@@ -30,15 +30,20 @@
           :style="{minHeight: `${navbarHeight}px`}"
         ></div>
 
-        <div style="width: 100%; display: flex; align-items: center; z-index: 1;" :style="{height: `${navbarHeight}px`}" class="px-16">
+        <div style="width: 100%; display: flex; align-items: center; z-index: 1;" :style="{height: `${navbarHeight}px`}" class="px-16 py-10">
           <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
           <v-container style="display: flex; align-items: center;">
-          <v-toolbar-title class="text-h4"><span class="primary--text text--darken-4 font-weight-bold">nodens</span><span class="accent--text font-weight-bold">inc.</span></v-toolbar-title>
+          <v-toolbar-title class="text-h4"><span class="black--text text--darken-4 font-weight-bold">nodens</span><span class="black--text font-weight-bold">inc.</span></v-toolbar-title>
           <v-spacer></v-spacer>
 
-          <v-btn v-for="(route, i) in navRoutes" exact-active-class="accent--text" exact-path :to="{name: route.route}" text class="text-capitalize mx-2" :key="i">
+            <div style="position: relative" v-for="(route, i) in navRoutes" :key="i">
+          <router-link :style="$route.name.includes(route.route)? styles.linkTextActive: styles.linkText"  exact-active-class="active-link" exact-path :to="{name: route.route}" text class="text-capitalize mx-8" >
+
             {{route.title}}
-          </v-btn>
+          </router-link>
+            </div>
+          <v-spacer></v-spacer>
+          <v-btn class="primary" style="border-radius: 8px;" large depressed><p style="color: white; font-weight: 600;" class="mb-0">Schedule A meeting</p></v-btn>
           <!-- <v-spacer></v-spacer> -->
           </v-container>
           <!-- <v-menu left bottom>
@@ -66,17 +71,35 @@ export default {
   data(){
     return { 
       navRoutes: [
-        { title: 'Timeline', route: 'pages.home'},
-        { title: 'Investors', route: 'pages.investors'},
-        { title: 'Products', route: 'pages.products'},
-        { title: 'Insights', route: 'pages.insights'},
+        { title: 'Home', route: 'pages.home'},
+        { title: 'Partnerships', route: 'pages.partnerships'},
+        { title: 'Company', route: 'pages.company'},
+        { title: 'Press Kit', route: 'pages.press-kit'},
       ]
     }
   },
   computed: {
     ...mapGetters({
       navbarHeight: 'ui/navbarHeight'
-    })
+    }), 
+    styles(){
+      let styles = {
+        linkText: {
+          textDecoration: 'none',
+          fontSize: '16px', 
+          lineHeight: '19px',
+          color: '#6E7177'
+        }, 
+        linkTextActive: {
+          textDecoration: 'none',
+
+          fontSize: '16px', 
+          lineHeight: '19px',
+          color: '#101010',
+        }
+      }
+      return styles
+    }
   }
 };
 </script>
@@ -84,5 +107,19 @@ export default {
 <style>
 .v-toolbar__content {
   padding: 0px !important;
+}
+
+.active-link::after {
+  content: '';
+  background-color: #101010;
+  /* margin-bottom: 15px;
+  margin-top: -33px; */
+  display: inline-block;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
 }
 </style>

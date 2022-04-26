@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import InvestorsPage from "../views/Investors.vue";
-import ProductsPage from "../views/Products.vue";
-import InsightsPage from "../views/Insights.vue";
+import PartnershipsPage from "../views/Partnerships.vue";
+import CompanyPage from "../views/Company.vue";
+import PressKitPage from "../views/PressKit.vue";
 // import TimelinePage from "../views/Timeline.vue";
 
 Vue.use(VueRouter)
@@ -15,19 +15,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/investors',
-    name: 'pages.investors',
-    component: InvestorsPage
+    path: '/partnerships',
+    name: 'pages.partnerships',
+    component: PartnershipsPage
   },
   {
-    path: '/products',
-    name: 'pages.products',
-    component: ProductsPage
+    path: '/company',
+    name: 'pages.company',
+    component: CompanyPage
   },
   {
-    path: '/insights',
-    name: 'pages.insights',
-    component: InsightsPage
+    path: '/press-kit',
+    name: 'pages.press-kit',
+    component: PressKitPage
   },
   {
     path: '/about',

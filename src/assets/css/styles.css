@@ -108,3 +108,252 @@ h6,
     0 0.25rem 0.53125rem rgba(4, 9, 20, 0.04),
     0 0.125rem 0.1875rem rgba(4, 9, 20, 0.04) !important;
 }
+
+.v-application .mt-17 {
+  margin-top: 68px !important;
+}
+
+.v-application .mt-18 {
+  margin-top: 72px !important;
+}
+
+.v-application .mt-19 {
+  margin-top: 76px !important;
+}
+
+.v-application .mt-20 {
+  margin-top: 80px !important;
+}
+
+.v-application .mt-21 {
+  margin-top: 84px !important;
+}
+
+.v-application .mt-22 {
+  margin-top: 88px !important;
+}
+
+.v-application .mt-23 {
+  margin-top: 92px !important;
+}
+
+.v-application .mt-24 {
+  margin-top: 96px !important;
+}
+
+.v-application .mt-25 {
+  margin-top: 100px !important;
+}
+
+.v-application .mt-26 {
+  margin-top: 104px !important;
+}
+
+.v-application .mb-17 {
+  margin-bottom: 68px !important;
+}
+
+.v-application .mb-18 {
+  margin-bottom: 72px !important;
+}
+
+.v-application .mb-19 {
+  margin-bottom: 76px !important;
+}
+
+.v-application .mb-20 {
+  margin-bottom: 80px !important;
+}
+
+.v-application .mb-21 {
+  margin-bottom: 84px !important;
+}
+
+.v-application .mb-22 {
+  margin-bottom: 88px !important;
+}
+
+.v-application .mb-23 {
+  margin-bottom: 92px !important;
+}
+
+.v-application .mb-24 {
+  margin-bottom: 96px !important;
+}
+
+.v-application .mb-25 {
+  margin-bottom: 100px !important;
+}
+
+.v-application .mb-26 {
+  margin-bottom: 104px !important;
+}
+
+.v-application .pt-17 {
+  padding-top: 68px !important;
+}
+
+.v-application .pt-18 {
+  padding-top: 72px !important;
+}
+
+.v-application .pt-19 {
+  padding-top: 76px !important;
+}
+
+.v-application .pt-20 {
+  padding-top: 80px !important;
+}
+
+.v-application .pt-21 {
+  padding-top: 84px !important;
+}
+
+.v-application .pt-22 {
+  padding-top: 88px !important;
+}
+
+.v-application .pt-23 {
+  padding-top: 92px !important;
+}
+
+.v-application .pt-24 {
+  padding-top: 96px !important;
+}
+
+.v-application .pt-25 {
+  padding-top: 100px !important;
+}
+
+.v-application .pt-26 {
+  padding-top: 104px !important;
+}
+
+.v-application .pb-17 {
+  padding-bottom: 68px !important;
+}
+
+.v-application .pb-18 {
+  padding-bottom: 72px !important;
+}
+
+.v-application .pb-19 {
+  padding-bottom: 76px !important;
+}
+
+.v-application .pb-20 {
+  padding-bottom: 80px !important;
+}
+
+.v-application .pb-21 {
+  padding-bottom: 84px !important;
+}
+
+.v-application .pb-22 {
+  padding-bottom: 88px !important;
+}
+
+.v-application .pb-23 {
+  padding-bottom: 92px !important;
+}
+
+.v-application .pb-24 {
+  padding-bottom: 96px !important;
+}
+
+.v-application .pb-25 {
+  padding-bottom: 100px !important;
+}
+
+.v-application .pb-26 {
+  padding-bottom: 104px !important;
+}
+
+.v-application .pa-17 {
+  padding: 68px !important;
+}
+
+.v-application .pa-18 {
+  padding: 72px !important;
+}
+
+.v-application .pa-19 {
+  padding: 76px !important;
+}
+
+.v-application .pa-20 {
+  padding: 80px !important;
+}
+
+.v-application .pa-21 {
+  padding: 84px !important;
+}
+
+.v-application .pa-22 {
+  padding: 88px !important;
+}
+
+.v-application .pa-23 {
+  padding: 92px !important;
+}
+
+.v-application .pa-24 {
+  padding: 96px !important;
+}
+
+.v-application .pa-25 {
+  padding: 100px !important;
+}
+
+.v-application .pa-26 {
+  padding: 104px !important;
+}
+
+.v-application .display-text {
+  font-size: 80px;
+  line-height: 95px;
+}
+
+.v-application h1 {
+  font-size: 64px;
+  line-height: 76px;
+}
+
+.v-application h2 {
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.v-application h3 {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.v-application h4 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.v-application p.body-copy-xl {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.v-application p.body-copy-l {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.v-application p.body-copy-m {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.v-application p.caption-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}

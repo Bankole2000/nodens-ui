@@ -41,5 +41,5 @@ export default () => ({
   appNav: {
     show: true,
   }, 
-  navbarHeight: 90
+  navbarHeight: 120
 })
