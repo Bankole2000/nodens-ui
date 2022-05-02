@@ -9,27 +9,63 @@
         min-width: 100vw;
         position: relative;
         display: flex;
-        
       "
-      :style="{paddingTop: `${navbarHeight}px`}"
-      
+      :style="{ paddingTop: `${navbarHeight}px` }"
     >
       <v-container>
         <v-row>
           <v-col cols="12">
-            <v-card elevation="0" class="mb-5" :img="require('@/assets/imgs/newcover1.jpeg')" height="40vh" style="border-radius: 16px">
-
+            <v-card
+              elevation="0"
+              class="mb-5"
+              :img="require('@/assets/imgs/newcover1.jpeg')"
+              height="40vh"
+              style="border-radius: 16px"
+            >
             </v-card>
           </v-col>
           <v-col cols="6">
             <h1>Creating a Future that is Accessible and Connected.</h1>
           </v-col>
           <v-col cols="6">
-            <div style="height: 100%;">
-              <h4 class="body-copy-l pr-4" style="font-weight: 400 !important; color: #6E7177;">We creating a future that is sustainable! Where you’re in control of money and connected to  resources that help better your life and people around you. Join us as we take incredible leaps to make this possible.</h4>
-              <div style="display: flex; align-items: center; justify-content: start;" class="mt-12">
-                <div class="mr-7" v-for="(topic, i) in topics" :key="i" :style="{borderRight: i < topics.length - 1 ? '2px solid #CCE3FF': 'none'}">
-                  <p style="color: #101010; font-size: 18px; line-height: 22px; font-weight: 400;" class="mb-0 mr-7">{{topic}}</p>
+            <div style="height: 100%">
+              <h4
+                class="body-copy-l pr-4"
+                style="font-weight: 400 !important; color: #6e7177"
+              >
+                We creating a future that is sustainable! Where you’re in
+                control of money and connected to resources that help better
+                your life and people around you. Join us as we take incredible
+                leaps to make this possible.
+              </h4>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: start;
+                "
+                class="mt-12"
+              >
+                <div
+                  class="mr-7"
+                  v-for="(topic, i) in topics"
+                  :key="i"
+                  :style="{
+                    borderRight:
+                      i < topics.length - 1 ? '2px solid #CCE3FF' : 'none',
+                  }"
+                >
+                  <p
+                    style="
+                      color: #101010;
+                      font-size: 18px;
+                      line-height: 22px;
+                      font-weight: 400;
+                    "
+                    class="mb-0 mr-7"
+                  >
+                    {{ topic }}
+                  </p>
                 </div>
               </div>
             </div>
@@ -37,29 +73,104 @@
         </v-row>
       </v-container>
     </div>
-    <div style="width: 100vw; height: calc(100vh); position: relative; display: flex;">
-      <div style="flex: 1; height: 100%; background: #101010;"></div>
-      <div style="flex: 1; height: 100%; background-size: cover; background-position: center center;" :style="{backgroundImage: `url(${require('@/assets/imgs/newcover2.jpeg')})`}"></div>
-      <div style="position: absolute; top: 0; left: 0; width: 100vw;">
+    <div
+      style="
+        width: 100vw;
+        height: calc(100vh);
+        position: relative;
+        display: flex;
+      "
+    >
+      <div style="flex: 1; height: 100%; background: #101010"></div>
+      <div
+        style="
+          flex: 1;
+          height: 100%;
+          background-size: cover;
+          background-position: center center;
+        "
+        :style="{
+          backgroundImage: `url(${require('@/assets/imgs/newcover2.jpeg')})`,
+        }"
+      ></div>
+      <div style="position: absolute; top: 0; left: 0; width: 100vw">
         <v-container>
           <v-row>
             <v-col cols="6">
               <div class="mt-25">
-                <p class="mb-4" style="font-size: 16px; line-height: 18.91px; letter: 12%; font-weight: 600; color: #6E7177;">OUR MISSION</p>
-                <h2 style="color: white;" class="mb-6">Providing globally competitive services with a net positive on customers.</h2>
-                <p class="pr-13 mb-16" style="font-size: 18px; line-height: 21.28px; font-weight: 400; color: #F4F6F8; letter: 1%;">Centered around good, we are seeking to provide customer-first services that ensure businesses are making profits rather than spending time worrying about capital to run their start-up.</p>
+                <p
+                  class="mb-4"
+                  style="
+                    font-size: 16px;
+                    line-height: 18.91px;
+                    letter: 12%;
+                    font-weight: 600;
+                    color: #6e7177;
+                  "
+                >
+                  OUR MISSION
+                </p>
+                <h2 style="color: white" class="mb-6">
+                  Providing globally competitive services with a net positive on
+                  customers.
+                </h2>
+                <p
+                  class="pr-13 mb-16"
+                  style="
+                    font-size: 18px;
+                    line-height: 21.28px;
+                    font-weight: 400;
+                    color: #f4f6f8;
+                    letter: 1%;
+                  "
+                >
+                  Centered around good, we are seeking to provide customer-first
+                  services that ensure businesses are making profits rather than
+                  spending time worrying about capital to run their start-up.
+                </p>
                 <div class="pt-16 d-flex align-center">
-                  <div style="flex: 1;">
-                    <h2 style="color: white;" class="mb-1">$3.5m</h2>
-                    <p style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Worth of loans disbursed</p>
+                  <div style="flex: 1">
+                    <h2 style="color: white" class="mb-1">$3.5m</h2>
+                    <p
+                      style="
+                        font-size: 18px;
+                        line-height: 21.28px;
+                        letter: 1%;
+                        font-weight: 400;
+                        color: #b6b7be;
+                      "
+                    >
+                      Worth of loans disbursed
+                    </p>
                   </div>
-                  <div style="flex: 1;">
-                    <h2 style="color: white;">$2.2m</h2>
-                    <p class="pr-16" style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Returns to investors</p>
+                  <div style="flex: 1">
+                    <h2 style="color: white">$2.2m</h2>
+                    <p
+                      class="pr-16"
+                      style="
+                        font-size: 18px;
+                        line-height: 21.28px;
+                        letter: 1%;
+                        font-weight: 400;
+                        color: #b6b7be;
+                      "
+                    >
+                      Returns to investors
+                    </p>
                   </div>
-                  <div style="flex: 1;">
-                    <h2 style="color: white;">300k+</h2>
-                    <p style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Customers onboarded</p>
+                  <div style="flex: 1">
+                    <h2 style="color: white">300k+</h2>
+                    <p
+                      style="
+                        font-size: 18px;
+                        line-height: 21.28px;
+                        letter: 1%;
+                        font-weight: 400;
+                        color: #b6b7be;
+                      "
+                    >
+                      Customers onboarded
+                    </p>
                   </div>
                 </div>
               </div>
@@ -68,23 +179,25 @@
           </v-row>
         </v-container>
       </div>
-
     </div>
-    <div style="width: 100vw;">
+    <div style="width: 100vw">
       <v-container>
         <v-row>
           <v-col cols="12">
-            <div class="pa-24" style="background-color: #101010; border-radius: 24px;">
+            <div
+              class="pa-24"
+              style="background-color: #101010; border-radius: 24px"
+            >
               <v-row>
                 <v-col cols="7"></v-col>
                 <v-col cols="5">
                   <div class="d-flex align-center">
-                    <h2 style="color: white;">Here's what people are saying about us</h2>
+                    <h2 style="color: white">
+                      Here's what people are saying about us
+                    </h2>
                   </div>
                 </v-col>
-                
               </v-row>
-
             </div>
           </v-col>
         </v-row>
@@ -251,25 +364,23 @@
           <LeadBlock :lead="lead" />
         </v-col>
       </v-row>
-      <v-divider></v-divider>
-      <SmallFooter />
     </v-container>
+    <NodensFooter />
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex';
 // import IconCard from "../components/blocks/IconCard.vue";
-import LeadBlock from "../components/blocks/LeadBlock.vue";
-import NodensProductCard from "../components/blocks/NodensProductCard.vue";
-import SmallFooter from "../components/common/SmallFooter.vue";
+import LeadBlock from '../components/blocks/LeadBlock.vue';
+import NodensProductCard from '../components/blocks/NodensProductCard.vue';
+import NodensFooter from '../components/common/NodensFooter.vue';
 
 export default {
-
-  components: { NodensProductCard, LeadBlock, SmallFooter },
+  components: { NodensProductCard, LeadBlock, NodensFooter },
   computed: {
     ...mapGetters({
-      navbarHeight: "ui/navbarHeight",
+      navbarHeight: 'ui/navbarHeight',
     }),
   },
   data() {
@@ -282,70 +393,70 @@ export default {
         show4: false,
       },
       stats: [
-        { metric: "Total Loans Disbursed", value: "$3.5m" },
-        { metric: "Returns to Investors", value: "$2.2m" },
-        { metric: "Registered Users", value: "300k+" },
+        { metric: 'Total Loans Disbursed', value: '$3.5m' },
+        { metric: 'Returns to Investors', value: '$2.2m' },
+        { metric: 'Registered Users', value: '300k+' },
         // {metric: 'Total No of Staff', value: '50'},
       ],
       investorLogos: [
-        "allianz.svg",
-        "carrefour.svg",
-        "vinci.svg",
-        "microsoft.svg",
-        "airbnb.svg",
+        'allianz.svg',
+        'carrefour.svg',
+        'vinci.svg',
+        'microsoft.svg',
+        'airbnb.svg',
       ],
       products: [
         {
-          logo: "nodcredit",
+          logo: 'nodcredit',
           product: {
-            title: "NodCredit",
-            desc: "Facilitating seamless access to nano loans. Get your loans in less than 24 hours.",
-            link: "https://nodcredit.com",
+            title: 'NodCredit',
+            desc: 'Facilitating seamless access to nano loans. Get your loans in less than 24 hours.',
+            link: 'https://nodcredit.com',
           },
           productLinks: [
             {
-              text: "Get Loans",
-              link: "https://nodcredit.com/loan",
+              text: 'Get Loans',
+              link: 'https://nodcredit.com/loan',
               linkAlt: null,
             },
             {
-              text: "Invest",
-              link: "https://nodcredit.com/invest",
+              text: 'Invest',
+              link: 'https://nodcredit.com/invest',
               linkAlt: null,
             },
           ],
         },
         {
-          logo: "nodtransfer",
+          logo: 'nodtransfer',
           product: {
-            title: "NodTransfer",
-            desc: "The safest and quickest way to transfer money accross borders at competitive rates.",
-            link: "https://nodtransfer.com",
+            title: 'NodTransfer',
+            desc: 'The safest and quickest way to transfer money accross borders at competitive rates.',
+            link: 'https://nodtransfer.com',
           },
           productLinks: [
             {
-              text: "Money Transfer",
-              link: "https://nodtransfer.com",
+              text: 'Money Transfer',
+              link: 'https://nodtransfer.com',
               linkAlt: null,
             },
             {
-              text: "Nodtransfer Credit",
-              link: "https://nodtransfer.com/nodtransfer-credit",
+              text: 'Nodtransfer Credit',
+              link: 'https://nodtransfer.com/nodtransfer-credit',
               linkAlt: null,
             },
           ],
         },
         {
-          logo: "nodcheckout",
+          logo: 'nodcheckout',
           product: {
-            title: "NodCheckout",
-            desc: "A new way to shop. Providing an API for Buy Now, Pay Later shopping experience.",
-            link: "https://nodcheckout.com",
+            title: 'NodCheckout',
+            desc: 'A new way to shop. Providing an API for Buy Now, Pay Later shopping experience.',
+            link: 'https://nodcheckout.com',
           },
           productLinks: [
             {
-              text: "Checkout by NodCredit",
-              link: "http://nodcheckout.com/for-businesses",
+              text: 'Checkout by NodCredit',
+              link: 'http://nodcheckout.com/for-businesses',
               linkAlt: null,
             },
           ],
@@ -359,33 +470,33 @@ export default {
         //   },
         // },
         {
-          logo: "nodcash",
+          logo: 'nodcash',
           product: {
-            title: "NodCash App",
-            desc: "A new way of sending, requesting and spending, combining crypto and leveraging our tech rails, this product sets your money free.",
-            link: "https://nodcashapp.com",
+            title: 'NodCash App',
+            desc: 'A new way of sending, requesting and spending, combining crypto and leveraging our tech rails, this product sets your money free.',
+            link: 'https://nodcashapp.com',
           },
           productLinks: [
             {
               text: null,
               link: null,
-              linkAlt: "Private Release - In Beta",
+              linkAlt: 'Private Release - In Beta',
             },
           ],
         },
       ],
       leadership: [
         {
-          image: "lead1.jpeg",
-          title: "Cofounder, Execution and Management",
-          name: "Abayomi Olofinlua",
-          linkedIn: "https://www.linkedin.com/in/abayomi-olofinlua-513aa459",
+          image: 'lead1.jpeg',
+          title: 'Cofounder, Execution and Management',
+          name: 'Abayomi Olofinlua',
+          linkedIn: 'https://www.linkedin.com/in/abayomi-olofinlua-513aa459',
         },
         {
-          image: "eva.jpeg",
-          title: "Management, Data & Advisory",
-          name: "Eva Sheluhina",
-          linkedIn: "",
+          image: 'eva.jpeg',
+          title: 'Management, Data & Advisory',
+          name: 'Eva Sheluhina',
+          linkedIn: '',
         },
         // {
         //   image: "lead2.jpg",
@@ -394,16 +505,16 @@ export default {
         //   linkedIn: "https://www.linkedin.com/in/olumide-oluwabiyi-750404a6",
         // },
         {
-          image: "vitalli.jpeg",
-          title: "Engineering, Products",
-          name: "Vitalii Khrabatyn",
-          linkedIn: "",
+          image: 'vitalli.jpeg',
+          title: 'Engineering, Products',
+          name: 'Vitalii Khrabatyn',
+          linkedIn: '',
         },
         {
-          image: "lead3.jpeg",
-          title: "Cofounder, Tech and Products",
-          name: "Tim Chukwuka",
-          linkedIn: "https://www.linkedin.com/in/timchuks",
+          image: 'lead3.jpeg',
+          title: 'Cofounder, Tech and Products',
+          name: 'Tim Chukwuka',
+          linkedIn: 'https://www.linkedin.com/in/timchuks',
         },
       ],
     };

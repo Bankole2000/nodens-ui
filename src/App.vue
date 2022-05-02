@@ -4,10 +4,9 @@
     <!-- <TransparentNavbar /> -->
     <v-main>
       <transition name="router-anim">
-        <router-view/>
+        <router-view />
       </transition>
     </v-main>
-    
   </v-app>
 </template>
 
@@ -16,10 +15,10 @@ import Navbar from './components/common/Navbar.vue';
 // import TransparentNavbar from './components/common/TransparentNavbar.vue';
 
 export default {
-  components: { 
-    Navbar, 
-    // TransparentNavbar 
-    },
+  components: {
+    Navbar,
+    // TransparentNavbar
+  },
   name: 'App',
 
   data: () => ({
@@ -106,5 +105,10 @@ export default {
   background-color: #28282833;
   border-radius: 10px;
   border: transparent;
+}
+@media (min-width: 1264px) {
+  .container {
+    max-width: 1350px;
+  }
 }
 </style>

@@ -1,72 +1,72 @@
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-Black.otf") format("woff"),
-  url("../fonts/MazzardH-Black.otf") format("opentype"),
-  url("../fonts/MazzardH-Black.otf") format("truetype");
+  src: url('../fonts/MazzardH-Black.otf') format('woff'),
+    url('../fonts/MazzardH-Black.otf') format('opentype'),
+    url('../fonts/MazzardH-Black.otf') format('truetype');
   font-weight: 900;
 }
 
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-ExtraBold.otf") format("woff"),
-  url("../fonts/MazzardH-ExtraBold.otf") format("opentype"),
-  url("../fonts/MazzardH-ExtraBold.otf") format("truetype");
+  src: url('../fonts/MazzardH-ExtraBold.otf') format('woff'),
+    url('../fonts/MazzardH-ExtraBold.otf') format('opentype'),
+    url('../fonts/MazzardH-ExtraBold.otf') format('truetype');
   font-weight: 800;
 }
 
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-Bold.otf") format("woff"),
-  url("../fonts/MazzardH-Bold.otf") format("opentype"),
-  url("../fonts/MazzardH-Bold.otf") format("truetype");
+  src: url('../fonts/MazzardH-Bold.otf') format('woff'),
+    url('../fonts/MazzardH-Bold.otf') format('opentype'),
+    url('../fonts/MazzardH-Bold.otf') format('truetype');
   font-weight: 700;
 }
 
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-SemiBold.otf") format("woff"),
-  url("../fonts/MazzardH-SemiBold.otf") format("opentype"),
-  url("../fonts/MazzardH-SemiBold.otf") format("truetype");
+  src: url('../fonts/MazzardH-SemiBold.otf') format('woff'),
+    url('../fonts/MazzardH-SemiBold.otf') format('opentype'),
+    url('../fonts/MazzardH-SemiBold.otf') format('truetype');
   font-weight: 600;
 }
 
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-Medium.otf") format("woff"),
-  url("../fonts/MazzardH-Medium.otf") format("opentype"),
-  url("../fonts/MazzardH-Medium.otf") format("truetype");
+  src: url('../fonts/MazzardH-Medium.otf') format('woff'),
+    url('../fonts/MazzardH-Medium.otf') format('opentype'),
+    url('../fonts/MazzardH-Medium.otf') format('truetype');
   font-weight: 500;
 }
 
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-Regular.otf") format("woff"),
-  url("../fonts/MazzardH-Regular.otf") format("opentype"),
-  url("../fonts/MazzardH-Regular.otf") format("truetype");
+  src: url('../fonts/MazzardH-Regular.otf') format('woff'),
+    url('../fonts/MazzardH-Regular.otf') format('opentype'),
+    url('../fonts/MazzardH-Regular.otf') format('truetype');
   font-weight: 400;
 }
 
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-Thin.otf") format("woff"),
-  url("../fonts/MazzardH-Thin.otf") format("opentype"),
-  url("../fonts/MazzardH-Thin.otf") format("truetype");
+  src: url('../fonts/MazzardH-Thin.otf') format('woff'),
+    url('../fonts/MazzardH-Thin.otf') format('opentype'),
+    url('../fonts/MazzardH-Thin.otf') format('truetype');
   font-weight: 300;
 }
 
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-Light.otf") format("woff"),
-  url("../fonts/MazzardH-Light.otf") format("opentype"),
-  url("../fonts/MazzardH-Light.otf") format("truetype");
+  src: url('../fonts/MazzardH-Light.otf') format('woff'),
+    url('../fonts/MazzardH-Light.otf') format('opentype'),
+    url('../fonts/MazzardH-Light.otf') format('truetype');
   font-weight: 200;
 }
 
-@font-face{
+@font-face {
   font-family: Mazzard;
-  src:url("../fonts/MazzardH-ExtraLight.otf") format("woff"),
-  url("../fonts/MazzardH-ExtraLight.otf") format("opentype"),
-  url("../fonts/MazzardH-ExtraLight.otf") format("truetype");
+  src: url('../fonts/MazzardH-ExtraLight.otf') format('woff'),
+    url('../fonts/MazzardH-ExtraLight.otf') format('opentype'),
+    url('../fonts/MazzardH-ExtraLight.otf') format('truetype');
   font-weight: 100;
 }
 
@@ -76,23 +76,24 @@ h2,
 h3,
 h4,
 h5,
-h6, 
-.v-application, 
-.v-application .display-1, 
-.v-application .display-2, 
-.v-application .display-3, 
-.v-application .display-4, 
-.v-application .text-h1,  
-.v-application .text-h2,  
-.v-application .text-h3,  
-.v-application .text-h4,  
-.v-application .text-h5,  
-.v-application .text-h6,  
-.v-application .headline, 
-.v-application .subtitle-1, 
-.v-application .subtitle-2, 
-.v-application .title, .nd-font {
-    font-family: Mazzard, sans-serif !important;
+h6,
+.v-application,
+.v-application .display-1,
+.v-application .display-2,
+.v-application .display-3,
+.v-application .display-4,
+.v-application .text-h1,
+.v-application .text-h2,
+.v-application .text-h3,
+.v-application .text-h4,
+.v-application .text-h5,
+.v-application .text-h6,
+.v-application .headline,
+.v-application .subtitle-1,
+.v-application .subtitle-2,
+.v-application .title,
+.nd-font {
+  font-family: Mazzard, sans-serif !important;
 }
 
 .v-application .elevated {
@@ -229,6 +230,26 @@ h6,
   padding-top: 104px !important;
 }
 
+.v-application .pt-30 {
+  padding-top: 120px !important;
+}
+
+.v-application .pt-40 {
+  padding-top: 140px !important;
+}
+
+.v-application .pt-60 {
+  padding-top: 140px !important;
+}
+
+.v-application .pt-80 {
+  padding-top: 160px !important;
+}
+
+.v-application .pt-100 {
+  padding-top: 180px !important;
+}
+
 .v-application .pb-17 {
   padding-bottom: 68px !important;
 }
@@ -267,6 +288,26 @@ h6,
 
 .v-application .pb-26 {
   padding-bottom: 104px !important;
+}
+
+.v-application .pb-30 {
+  padding-bottom: 120px !important;
+}
+
+.v-application .pb-40 {
+  padding-bottom: 140px !important;
+}
+
+.v-application .pb-60 {
+  padding-bottom: 140px !important;
+}
+
+.v-application .pb-80 {
+  padding-bottom: 160px !important;
+}
+
+.v-application .pb-100 {
+  padding-bottom: 180px !important;
 }
 
 .v-application .pa-17 {
@@ -356,4 +397,16 @@ h6,
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
+}
+
+.v-application .font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.v-application .text-body-main {
+  font-size: 18px !important;
+}
+
+.v-application .grey-text {
+  color: #6e7177;
 }
