@@ -11,6 +11,7 @@
             <Breadcrumb
               class="text-center"
               large
+              icon="mdi-office-building"
               currentPage="For Bank"
               link="partnerships/for-banks"
             />
@@ -71,7 +72,7 @@
                 <v-list dense style="background: transparent">
                   <v-list-item v-for="(list, index) in item.lists" :key="index">
                     <v-list-item-icon>
-                      <v-icon color="#0068EB" small="true">mdi-check</v-icon>
+                      <v-icon color="#0068EB">mdi-check</v-icon>
                     </v-list-item-icon>
                     <v-list-item-content>
                       <v-list-item-title

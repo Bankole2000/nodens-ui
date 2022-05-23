@@ -11,15 +11,22 @@
             Disrupting the Banking Sector with Competitive Services
           </h1>
           <section class="mt-16">
-            <slick ref="slick" :options="slickOptions">
+            <v-sheet class="mx-auto" elevation="8" max-width="100%">
+              <v-slide-group multiple show-arrows>
+                <v-slide-item v-for="(n, i) in images" :key="i">
+                  <div>hello</div>
+                </v-slide-item>
+              </v-slide-group>
+            </v-sheet>
+            <!-- <slick ref="slick" :options="slickOptions">
               <template v-if="images">
                 <img
                   v-for="(image, index) in images"
                   :key="index"
                   :src="require(`@/assets/imgs/${image}`)"
                 />
-              </template>
-            </slick>
+              </template>npm
+            </slick> -->
           </section>
         </v-col>
       </v-row>
@@ -173,13 +180,12 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import 'slick-carousel/slick/slick.css';
-import Slick from 'vue-slick';
 import NodensFooter from '../components/common/NodensFooter.vue';
 export default {
-  components: { Slick, NodensFooter },
+  components: { NodensFooter },
   data() {
     return {
+      model: null,
       images: [
         'slider-placeholder.png',
         'slider-placeholder.png',

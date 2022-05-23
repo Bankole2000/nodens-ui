@@ -11,6 +11,7 @@
             <Breadcrumb
               class="text-center"
               large
+              icon="mdi-storefront"
               currentPage="For Merchants"
               link="partnerships/for-merchants"
             />

@@ -12,6 +12,7 @@
               class="text-center"
               large
               currentPage="For Government"
+              icon="mdi-warehouse"
               link="partnerships/for-government"
             />
 

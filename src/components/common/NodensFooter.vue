@@ -1,6 +1,11 @@
 <template>
   <footer class="main-footer black white--text">
-    <div class="upper-footer py-12" style="background-color: #72aaf5">
+    <div
+      class="upper-footer py-12"
+      :style="{
+        backgroundImage: `url(${require('@/assets/imgs/footer-bg.jpg')})`,
+      }"
+    >
       <v-container>
         <v-row>
           <v-col col="12">
@@ -12,19 +17,21 @@
             </p>
             <div class="mt-16">
               <v-btn
-                v-for="(item, index) in contactButton"
-                :key="index"
                 x-large
                 elevation="0"
                 rounded-lg
-                :to="{ name: `${item.link}` }"
-                :class="{
-                  'mr-10': index == 0,
-                  'black white--text': index == 0,
-                  'white black--text': index == 1,
-                }"
+                class="black white--text mr-10"
               >
-                {{ item.text }}
+                Schedule a meeting
+              </v-btn>
+
+              <v-btn
+                x-large
+                elevation="0"
+                rounded-lg
+                class="white black--text mr-10"
+              >
+                Contact us
               </v-btn>
             </div>
           </v-col>
@@ -117,20 +124,15 @@
 <script>
 export default {
   data() {
-    return {
-      contactButton: [
-        {
-          text: 'Schedule a meeting',
-          link: '#',
-        },
-        {
-          text: 'Contact us',
-          link: 'pages.contact-us',
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>
 
-<style></style>
+<style>
+.upper-footer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+</style>

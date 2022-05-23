@@ -2,7 +2,7 @@
   <div>
     <v-breadcrumbs :items="items">
       <template v-slot:divider>
-        <v-icon>mdi-home</v-icon>
+        <v-icon v-text="icon" style="font-size: 1.5rem"></v-icon>
       </template>
     </v-breadcrumbs>
   </div>
@@ -11,8 +11,20 @@
 <script>
 export default {
   name: 'breadcrumbs',
-  props: ['currentPage', 'link'],
-
+  props: {
+    currentPage: {
+      type: String,
+      default: '',
+    },
+    link: {
+      type: String,
+    },
+    icon: {
+      type: String,
+      default: 'mdi-home',
+    },
+  },
+  // ['currentPage', 'link', 'icon']
   data() {
     return {
       items: [
@@ -31,7 +43,7 @@ export default {
     };
   },
   mounted() {
-    console.log(this.link);
+    // console.log(this.link);
   },
 };
 </script>
