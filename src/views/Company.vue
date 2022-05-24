@@ -10,24 +10,6 @@
           <h1 class="text-h2 font-weight-600">
             Disrupting the Banking Sector with Competitive Services
           </h1>
-          <section class="mt-16">
-            <v-sheet class="mx-auto" elevation="8" max-width="100%">
-              <v-slide-group multiple show-arrows>
-                <v-slide-item v-for="(n, i) in images" :key="i">
-                  <div>hello</div>
-                </v-slide-item>
-              </v-slide-group>
-            </v-sheet>
-            <!-- <slick ref="slick" :options="slickOptions">
-              <template v-if="images">
-                <img
-                  v-for="(image, index) in images"
-                  :key="index"
-                  :src="require(`@/assets/imgs/${image}`)"
-                />
-              </template>npm
-            </slick> -->
-          </section>
         </v-col>
       </v-row>
 
