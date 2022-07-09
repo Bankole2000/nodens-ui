@@ -11,19 +11,50 @@
 </template>
 
 <script>
-import Navbar from './components/common/Navbar.vue';
+import Navbar from "./components/common/Navbar.vue";
 // import TransparentNavbar from './components/common/TransparentNavbar.vue';
-
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   components: {
     Navbar,
     // TransparentNavbar
   },
-  name: 'App',
+  name: "App",
 
   data: () => ({
     //
   }),
+  mounted() {
+    // console.log({ vuetify: this.$vuetify });
+    // gsap.registerPlugin(ScrollTrigger);
+    // const tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     id: "products",
+    //     trigger: ".products-section",
+    //     start: "center 40vh",
+    //     pin: true,
+    //     scrub: true,
+    //     markers: true,
+    //     endTrigger: ".end-section",
+    //     end: "bottom top",
+    //   },
+    // });
+    // tl.fromTo(".section", { x: 0 }, { x: "-190vw" });
+    // console.log({ gsap, ScrollTrigger, triggers: ScrollTrigger.getAll() });
+    // gsap.registerPlugin(ScrollTrigger);
+    // const animation = gsap.fromTo(".section", { x: 0 }, { x: "-190vw" });
+    // ScrollTrigger.create({
+    //   trigger: ".products-section",
+    //   animation,
+    //   start: "top 110px",
+    //   pin: true,
+    //   scrub: true,
+    //   markers: true,
+    //   endTrigger: ".end-section",
+    //   end: "bottom top",
+    // });
+  },
 };
 </script>
 

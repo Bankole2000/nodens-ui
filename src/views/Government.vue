@@ -81,10 +81,18 @@
                 border-radius: 8px;
                 border: 1px solid blue;
               "
+              :style="{
+                backgroundImage: `url(${require('@/assets/imgs/bgimages/smallbgpattern.svg')})`,
+                backgroundPosition: 'right center',
+                backgroundSize: 'cover',
+              }"
               v-for="(item, i) in offers"
               :key="i"
             >
-              <v-card-title class="text-h4 font-weight-600 mb-6">
+              <v-card-title
+                style="word-break: break-word"
+                class="text-h4 font-weight-600 mb-6"
+              >
                 {{ item.title }}</v-card-title
               >
               <v-card-text class="text-body-main">
@@ -116,30 +124,30 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import Breadcrumb from '../components/common/Breadcrumb.vue';
-import Partner from '../components/common/Partner.vue';
-import NodensFooter from '../components/common/NodensFooter.vue';
+import { mapGetters } from "vuex";
+import Breadcrumb from "../components/common/Breadcrumb.vue";
+import Partner from "../components/common/Partner.vue";
+import NodensFooter from "../components/common/NodensFooter.vue";
 export default {
   data() {
     return {
       offers: [
         {
-          title: 'Economy boost',
+          title: "Economy boost",
           content:
-            'With the credit facilities offered to low-income customers and MSMEs, we would be laying a foundation that would in turn boost economic development.',
+            "With the credit facilities offered to low-income customers and MSMEs, we would be laying a foundation that would in turn boost economic development.",
         },
         {
-          title: 'Increase in financial inclusion',
+          title: "Increase in financial inclusion",
           content:
-            'By partnering with us, the government would be able to go within the rural communities to promote financial inclusion and bridging credit gaps amongst the underbanked and unbanked within the area.',
+            "By partnering with us, the government would be able to go within the rural communities to promote financial inclusion and bridging credit gaps amongst the underbanked and unbanked within the area.",
         },
       ],
     };
   },
   computed: {
     ...mapGetters({
-      navbarHeight: 'ui/navbarHeight',
+      navbarHeight: "ui/navbarHeight",
     }),
   },
   components: { Breadcrumb, NodensFooter, Partner },

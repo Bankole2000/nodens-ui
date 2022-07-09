@@ -2,12 +2,20 @@
   <div
     class="bank-page pt-20"
     style="background-color: #fff"
-    :style="{ marginTop: `-${navbarHeight}px` }"
+    :style="{ marginTop: `0px` }"
   >
     <v-container class="mb-16">
       <v-row>
         <v-col cols="12">
-          <div class="rounded-xl pa-16" style="background-color: #fdd5b9">
+          <div
+            class="rounded-xl pa-16"
+            style="background-color: #fdd5b9"
+            :style="{
+              backgroundImage: `url(${require('@/assets/imgs/bgimages/orangebgpattern.svg')})`,
+              backgroundPosition: 'right center',
+              backgroundSize: 'cover',
+            }"
+          >
             <h3 class="font-weight-600 text-h2 mb-6">Our Terms of Use</h3>
             <p class="accent--text darken font-weight-medium text-body-main">
               Revised 15th February, 2022
@@ -65,9 +73,9 @@
 </template>
 
 <script>
-import NodensFooter from '../components/common/NodensFooter.vue';
+import NodensFooter from "../components/common/NodensFooter.vue";
 export default {
-  name: 'Privacy',
+  name: "Privacy",
   components: { NodensFooter },
 };
 </script>

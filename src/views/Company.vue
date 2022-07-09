@@ -61,12 +61,20 @@
               style="
                 background-color: #e9f2fe;
                 border-radius: 8px;
-                border: 1px solid blue;
+                border: 1px solid transparent;
               "
+              :style="{
+                backgroundImage: `url(${require('@/assets/imgs/bgimages/smallbgpattern.svg')})`,
+                backgroundPosition: 'right center',
+                backgroundSize: 'cover',
+              }"
               v-for="(item, i) in values"
               :key="i"
             >
-              <v-card-title class="text-h4 font-weight-600 mb-6">
+              <v-card-title
+                style="word-break: break-word"
+                class="text-h4 font-weight-600 mb-6"
+              >
                 {{ item.title }}</v-card-title
               >
               <v-card-text class="text-body-main">
@@ -161,18 +169,18 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import NodensFooter from '../components/common/NodensFooter.vue';
+import { mapGetters } from "vuex";
+import NodensFooter from "../components/common/NodensFooter.vue";
 export default {
   components: { NodensFooter },
   data() {
     return {
       model: null,
       images: [
-        'slider-placeholder.png',
-        'slider-placeholder.png',
-        'slider-placeholder.png',
-        'slider-placeholder.png',
+        "slider-placeholder.png",
+        "slider-placeholder.png",
+        "slider-placeholder.png",
+        "slider-placeholder.png",
       ],
       slickOptions: {
         dots: true,
@@ -185,84 +193,84 @@ export default {
         // Any other options that can be got from plugin documentation
       },
       stats: [
-        { metric: 'Total Loans Disbursed', value: '$3.5m' },
-        { metric: 'Returns to Investors', value: '$2.2m' },
-        { metric: 'Registered Users', value: '300k+' },
+        { metric: "Total Loans Disbursed", value: "$3.5m" },
+        { metric: "Returns to Investors", value: "$2.2m" },
+        { metric: "Registered Users", value: "300k+" },
         // {metric: 'Total No of Staff', value: '50'},
       ],
       values: [
         {
-          title: 'Building for the people',
+          title: "Building for the people",
           content:
-            'We provide loans to grow your business, focus on your business rather than worry about capital.',
+            "We provide loans to grow your business, focus on your business rather than worry about capital.",
         },
         {
-          title: 'Building for the people',
+          title: "Building for the people",
           content:
-            'We provide loans to grow your business, focus on your business rather than worry about capital.',
+            "We provide loans to grow your business, focus on your business rather than worry about capital.",
         },
         {
-          title: 'Building for the people',
+          title: "Building for the people",
           content:
-            'We provide loans to grow your business, focus on your business rather than worry about capital.',
+            "We provide loans to grow your business, focus on your business rather than worry about capital.",
         },
       ],
 
       partners: [
-        'paystacklogo.svg',
-        'scotraillogo.svg',
-        'mcenvoylogo.svg',
-        'kinglogo.svg',
-        'stripelogo.svg',
+        "paystacklogo.svg",
+        "scotraillogo.svg",
+        "mcenvoylogo.svg",
+        "kinglogo.svg",
+        "stripelogo.svg",
       ],
 
       teams: [
         {
-          name: 'Abayomi Olofinlua',
-          title: 'CEO & Co-founder',
-          picture: 'team-placeholder.png',
+          name: "Abayomi Olofinlua",
+          title: "CEO & Co-founder",
+          picture: "team-placeholder.png",
         },
         {
-          name: 'Tim Chukwuka',
-          title: 'CTO & Co-founder',
-          picture: 'team-placeholder.png',
+          name: "Tim Chukwuka",
+          title: "CTO & Co-founder",
+          picture: "team-placeholder.png",
         },
         {
-          name: 'Eva Sheluhina',
-          title: 'Data & Advisory',
-          picture: 'team-placeholder.png',
+          name: "Eva Sheluhina",
+          title: "Data & Advisory",
+          picture: "team-placeholder.png",
         },
         {
-          name: 'Vitalii Khrabatyn',
-          title: 'Engineering & Products',
-          picture: 'team-placeholder.png',
+          name: "Vitalii Khrabatyn",
+          title: "Engineering & Products",
+          picture: "team-placeholder.png",
         },
         {
-          name: 'Abayomi Olofinlua',
-          title: 'CEO & Co-founder',
-          picture: 'team-placeholder.png',
+          name: "Abayomi Olofinlua",
+          title: "CEO & Co-founder",
+          picture: "team-placeholder.png",
         },
         {
-          name: 'Tim Chukwuka',
-          title: 'CTO & Co-founder',
-          picture: 'team-placeholder.png',
+          name: "Tim Chukwuka",
+          title: "CTO & Co-founder",
+          picture: "team-placeholder.png",
         },
         {
-          name: 'Eva Sheluhina',
-          title: 'Data & Advisory',
-          picture: 'team-placeholder.png',
+          name: "Eva Sheluhina",
+          title: "Data & Advisory",
+          picture: "team-placeholder.png",
         },
         {
-          name: 'Vitalii Khrabatyn',
-          title: 'Engineering & Products',
-          picture: 'team-placeholder.png',
+          name: "Vitalii Khrabatyn",
+          title: "Engineering & Products",
+          picture: "team-placeholder.png",
         },
       ],
     };
   },
   computed: {
     ...mapGetters({
-      navbarHeight: 'ui/navbarHeight',
+      navbarHeight: "ui/navbarHeight",
     }),
   },
 };

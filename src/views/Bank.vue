@@ -59,12 +59,19 @@
                 border-radius: 8px;
                 border: 1px solid blue;
               "
+              :style="{
+                backgroundImage: `url(${require('@/assets/imgs/bgimages/smallbgpattern.svg')})`,
+                backgroundPosition: 'right center',
+                backgroundSize: 'cover',
+              }"
               v-for="(item, i) in offers"
               :key="i"
             >
-              <v-card-title class="text-h4 font-weight-600 mb-6">{{
-                item.title
-              }}</v-card-title>
+              <v-card-title
+                style="word-break: break-word"
+                class="text-h4 font-weight-600 mb-6"
+                >{{ item.title }}</v-card-title
+              >
               <v-card-text class="text-body-main">
                 {{ item.content }}
               </v-card-text>
@@ -94,40 +101,40 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import Breadcrumb from '../components/common/Breadcrumb.vue';
-import Partner from '../components/common/Partner.vue';
-import NodensFooter from '../components/common/NodensFooter.vue';
+import { mapGetters } from "vuex";
+import Breadcrumb from "../components/common/Breadcrumb.vue";
+import Partner from "../components/common/Partner.vue";
+import NodensFooter from "../components/common/NodensFooter.vue";
 export default {
   data() {
     return {
       offers: [
         {
-          title: 'Payment solutions',
+          title: "Payment solutions",
           content:
-            'Through NodCredit, a leading consumer credit brand, we give a simple framework to allow bank deliver disbursements solutions seamlessly to the underbanked and the unbanked..',
+            "Through NodCredit, a leading consumer credit brand, we give a simple framework to allow bank deliver disbursements solutions seamlessly to the underbanked and the unbanked..",
         },
         {
-          title: 'Revenue generation',
+          title: "Revenue generation",
           content:
             "For credit scoring, customer analytics, and tailored marketing automation, institutions can use NodCredit's machine learning and consumer data to make better credit decisions. This enables the development of new products and improves the client experience, resulting in increased income for banks.",
         },
         {
-          title: 'Network security',
+          title: "Network security",
           content:
-            'With our authentication, risk management, and fraud protection services, NodCredit can help you supplement your security procedures.',
+            "With our authentication, risk management, and fraud protection services, NodCredit can help you supplement your security procedures.",
         },
         {
-          title: 'Credit customers on the go',
+          title: "Credit customers on the go",
           content: null,
-          lists: ['Mobile App', 'USSD', 'Web'],
+          lists: ["Mobile App", "USSD", "Web"],
         },
       ],
     };
   },
   computed: {
     ...mapGetters({
-      navbarHeight: 'ui/navbarHeight',
+      navbarHeight: "ui/navbarHeight",
     }),
   },
   components: { Breadcrumb, NodensFooter, Partner },

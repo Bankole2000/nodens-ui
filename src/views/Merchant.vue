@@ -69,10 +69,18 @@
                 border-radius: 8px;
                 border: 1px solid blue;
               "
+              :style="{
+                backgroundImage: `url(${require('@/assets/imgs/bgimages/smallbgpattern.svg')})`,
+                backgroundPosition: 'right center',
+                backgroundSize: 'cover',
+              }"
               v-for="(item, i) in offers"
               :key="i"
             >
-              <v-card-title class="text-h4 font-weight-600 mb-6">
+              <v-card-title
+                style="word-break: break-word"
+                class="text-h4 font-weight-600 mb-6"
+              >
                 {{ item.title }}</v-card-title
               >
               <v-card-text class="text-body-main">
@@ -104,26 +112,26 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-import Breadcrumb from '../components/common/Breadcrumb.vue';
-import Partner from '../components/common/Partner.vue';
-import NodensFooter from '../components/common/NodensFooter.vue';
+import { mapGetters } from "vuex";
+import Breadcrumb from "../components/common/Breadcrumb.vue";
+import Partner from "../components/common/Partner.vue";
+import NodensFooter from "../components/common/NodensFooter.vue";
 export default {
   data() {
     return {
       offers: [
         {
-          title: 'Co-marketing possibilities',
+          title: "Co-marketing possibilities",
           content:
-            'We can highlight our partnership and help you connect with new customers through joint marketing campaigns.',
+            "We can highlight our partnership and help you connect with new customers through joint marketing campaigns.",
         },
         {
-          title: 'Zero risk',
+          title: "Zero risk",
           content:
-            'All credit risk is assumed by us. You will be paid in full right away while your customers pay us in installments.',
+            "All credit risk is assumed by us. You will be paid in full right away while your customers pay us in installments.",
         },
         {
-          title: 'Dedicated assistance',
+          title: "Dedicated assistance",
           content:
             "Our modern APIs make integration simple, but you'll also get personalized support for any technical concerns or inquiries about our partners.",
         },
@@ -132,7 +140,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      navbarHeight: 'ui/navbarHeight',
+      navbarHeight: "ui/navbarHeight",
     }),
   },
   components: { Breadcrumb, NodensFooter, Partner },

@@ -3,6 +3,7 @@
     class="home-page"
     :style="{ marginTop: `-${navbarHeight}px`, backgroundColor: `#faf6f8` }"
   >
+    <!-- SECTION: Creating a future -->
     <div
       style="
         min-height: 100vh;
@@ -20,6 +21,7 @@
               class="mb-5"
               :img="require('@/assets/imgs/newcover1.jpeg')"
               height="40vh"
+              width="100%"
               style="border-radius: 16px"
             >
             </v-card>
@@ -56,13 +58,8 @@
                   }"
                 >
                   <p
-                    style="
-                      color: #101010;
-                      font-size: 18px;
-                      line-height: 22px;
-                      font-weight: 400;
-                    "
-                    class="mb-0 mr-7"
+                    style="font-size: 18px; line-height: 22px; font-weight: 400"
+                    class="mb-0 mr-7 black-text"
                   >
                     {{ topic }}
                   </p>
@@ -73,7 +70,43 @@
         </v-row>
       </v-container>
     </div>
+    <!-- TODO: SECTION: Scrolling logos -->
+    <div class="my-16 pb-16">
+      <LogoScroller />
+    </div>
+    <!-- TODO: SECTION: Banking the Unbanked -->
+    <div class="my-16 pb-8">
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <div class="d-flex align-start">
+              <h3 class="text-h3 mb-6 pt-2 font-weight-bold black--text">
+                Banking the
+                <!-- <span class="bg-colored-text">&nbsp;Unbanked.&nbsp;</span> -->
+              </h3>
+              <div style="position: relative" class="ml-2">
+                <div style="background-color: #fdd5b9">
+                  <h3
+                    class="text-h3 mt-0 py-2 font-weight-bold transparent--text"
+                  >
+                    &nbsp; Unbanked.
+                  </h3>
+                </div>
+                <div style="position: absolute; top: -50px; left: 10px">
+                  <h3 class="text-h3 mb-6 py-2 font-weight-bold black--text">
+                    &nbsp; Unbanked.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+      <ValuePropositions />
+    </div>
+    <!-- SECTION: Our mission -->
     <div
+      class="our-mission"
       style="
         width: 100vw;
         height: calc(100vh);
@@ -81,7 +114,7 @@
         display: flex;
       "
     >
-      <div style="flex: 1; height: 100%; background: #101010"></div>
+      <div style="flex: 1; height: 100%" class="black-bg"></div>
       <div
         style="
           flex: 1;
@@ -93,7 +126,15 @@
           backgroundImage: `url(${require('@/assets/imgs/newcover2.jpeg')})`,
         }"
       ></div>
-      <div style="position: absolute; top: 0; left: 0; width: 100vw">
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          min-height: 100vw;
+        "
+      >
         <v-container>
           <v-row>
             <v-col cols="6">
@@ -139,6 +180,7 @@
                         font-weight: 400;
                         color: #b6b7be;
                       "
+                      class="pr-5"
                     >
                       Worth of loans disbursed
                     </p>
@@ -168,6 +210,7 @@
                         font-weight: 400;
                         color: #b6b7be;
                       "
+                      class="pr-5"
                     >
                       Customers onboarded
                     </p>
@@ -180,16 +223,166 @@
         </v-container>
       </div>
     </div>
-    <div style="width: 100vw">
+    <!-- SECTION: Our products -->
+    <div class="mt-16 pt-16">
       <v-container>
         <v-row>
           <v-col cols="12">
-            <div
-              class="pa-24"
-              style="background-color: #101010; border-radius: 24px"
-            >
-              <v-row>
-                <v-col cols="7"></v-col>
+            <div class="d-flex align-start">
+              <h3 class="text-h3 mb-6 pt-2 font-weight-bold black--text">
+                Putting Customers
+                <!-- <span class="bg-colored-text">&nbsp;Unbanked.&nbsp;</span> -->
+              </h3>
+              <div style="position: relative" class="ml-2">
+                <div style="background-color: #fdd5b9">
+                  <h3
+                    class="text-h3 mt-0 py-2 font-weight-bold transparent--text"
+                  >
+                    &nbsp; First.
+                  </h3>
+                </div>
+                <div style="position: absolute; top: -50px; left: 10px">
+                  <h3 class="text-h3 mb-6 py-2 font-weight-bold black--text">
+                    &nbsp; First.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+      <ProductsSlider />
+    </div>
+    <!-- <div>
+      <ProductsSection :key="component" />
+    </div> -->
+    <!-- TODO: SECTION: Here's what people are saying -->
+    <div style="width: 100vw" class="my-16 pb-16">
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <div class="pa-24 black-bg" style="border-radius: 24px">
+              <v-row align="center">
+                <v-col cols="7">
+                  <v-card style="margin-bottom: 20vh" color="transparent">
+                    <div style="width: 100px" class="mx-auto">
+                      <div style="position: relative" class="ml-n16">
+                        <v-hover v-slot:default="{ hover }">
+                          <div
+                            style="position: absolute; top: 0; left: 0"
+                            :style="{ zIndex: hover ? 1 : 1 }"
+                          >
+                            <v-card rounded="xl" class="px-10 pt-10 pb-2">
+                              <v-card-text class="pa-0">
+                                <p
+                                  class="text-h5 black-text"
+                                  style="line-height: 1.8rem !important"
+                                >
+                                  "We trusted the foks at
+                                  <strong>NodensInc</strong> to integrate some
+                                  of our solutions and they fit so perfectly.
+                                  We're so glad we got to work with them and
+                                  we're hopeful to partner on more amazing
+                                  products in times to come"
+                                </p>
+                              </v-card-text>
+                              <v-card-actions class="pa-0">
+                                <v-list two-line class="py-0">
+                                  <v-list-item class="pa-0">
+                                    <v-list-item-avatar>
+                                      <v-avatar
+                                        color="grey lighten-2"
+                                      ></v-avatar>
+                                    </v-list-item-avatar>
+                                    <v-list-item-content class="py-0">
+                                      <v-list-item-title
+                                        >James Jones</v-list-item-title
+                                      >
+                                      <v-list-item-subtitle
+                                        >Growth Manager</v-list-item-subtitle
+                                      >
+                                    </v-list-item-content>
+                                    <v-list-item-icon>
+                                      <div
+                                        style="height: 100%"
+                                        class="d-flex align-center"
+                                      >
+                                        <v-img
+                                          class="mt-4"
+                                          :src="
+                                            require('@/assets/imgs/logos/stripe-black.svg')
+                                          "
+                                        ></v-img>
+                                      </div>
+                                    </v-list-item-icon>
+                                  </v-list-item>
+                                </v-list>
+                              </v-card-actions>
+                            </v-card>
+                          </div>
+                        </v-hover>
+                        <v-hover v-slot:default="{ hover }">
+                          <div
+                            style="position: absolute; top: 13vh; left: 8vh"
+                            :style="{ zIndex: hover ? 1 : 0 }"
+                          >
+                            <v-card
+                              rounded="xl"
+                              class="px-10 pt-10 pb-2 primary"
+                            >
+                              <v-card-text class="pa-0">
+                                <p
+                                  class="text-h5 white--text"
+                                  style="line-height: 1.8rem !important"
+                                >
+                                  "We trusted the foks at
+                                  <strong>NodensInc</strong> to integrate some
+                                  of our solutions and they fit so perfectly.
+                                  We're so glad we got to work with them and
+                                  we're hopeful to partner on more amazing
+                                  products in times to come"
+                                </p>
+                              </v-card-text>
+                              <v-card-actions class="pa-0">
+                                <v-list two-line class="py-0 primary">
+                                  <v-list-item class="pa-0 white--text">
+                                    <v-list-item-avatar>
+                                      <v-avatar
+                                        color="grey lighten-2"
+                                      ></v-avatar>
+                                    </v-list-item-avatar>
+                                    <v-list-item-content class="py-0">
+                                      <v-list-item-title
+                                        >Stephen King</v-list-item-title
+                                      >
+                                      <v-list-item-subtitle
+                                        class="grey--text text--lighten-2"
+                                        >Founder</v-list-item-subtitle
+                                      >
+                                    </v-list-item-content>
+                                    <v-list-item-icon>
+                                      <div
+                                        style="height: 100%"
+                                        class="d-flex align-center"
+                                      >
+                                        <v-img
+                                          class="mt-4"
+                                          :src="
+                                            require('@/assets/imgs/logos/king-white.svg')
+                                          "
+                                        ></v-img>
+                                      </div>
+                                    </v-list-item-icon>
+                                  </v-list-item>
+                                </v-list>
+                              </v-card-actions>
+                            </v-card>
+                          </div>
+                        </v-hover>
+                      </div>
+                    </div>
+                  </v-card>
+                </v-col>
                 <v-col cols="5">
                   <div class="d-flex align-center">
                     <h2 style="color: white">
@@ -203,8 +396,8 @@
         </v-row>
       </v-container>
     </div>
-
-    <div style="position: relative">
+    <!-- TODO: SECTION: Footer -->
+    <!-- <div style="position: relative">
       <v-container>
         <v-row class="py-8 my-4">
           <v-col cols="12">
@@ -232,9 +425,7 @@
                   </template>
                 </v-img>
               </div>
-              <!-- <v-overlay :absolute="true" :opacity="0.1" :value="true">
-                <v-btn color="orange lighten-2"> Hide Overlay </v-btn>
-              </v-overlay> -->
+              
             </v-card>
             <v-card elevation="0" v-else>
               <v-row align="center" justify="center">
@@ -269,7 +460,6 @@
           </v-col>
         </v-row>
       </v-container>
-      <!-- background-color: rgba(255, 198, 122, 0.753); -->
       <div
         style="
           position: absolute;
@@ -280,8 +470,8 @@
           backdrop-filter: blur(20px);
         "
       ></div>
-    </div>
-    <v-container>
+    </div> -->
+    <!-- <v-container>
       <v-row class="mb-16">
         <v-col cols="12">
           <p
@@ -289,8 +479,7 @@
             class="mt-8 font-weight-regular accent--text"
             style="line-height: 8rem; font-size: 5rem"
           >
-            <!-- Providing speedy and responsive financial services while generating
-            substantial value. -->
+            
             <span
               class="
                 font-weight-bold
@@ -364,99 +553,121 @@
           <LeadBlock :lead="lead" />
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
     <NodensFooter />
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters } from "vuex";
+import LogoScroller from "../components/blocks/LogoScroller.vue";
+import ProductsSlider from "../components/blocks/ProductsSlider.vue";
+import ValuePropositions from "../components/blocks/ValuePropositions.vue";
 // import IconCard from "../components/blocks/IconCard.vue";
-import LeadBlock from '../components/blocks/LeadBlock.vue';
-import NodensProductCard from '../components/blocks/NodensProductCard.vue';
-import NodensFooter from '../components/common/NodensFooter.vue';
-
+// import LeadBlock from "../components/blocks/LeadBlock.vue";
+// import NodensProductCard from "../components/blocks/NodensProductCard.vue";
+import NodensFooter from "../components/common/NodensFooter.vue";
+// import Test from "./Test.vue";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
-  components: { NodensProductCard, LeadBlock, NodensFooter },
+  components: {
+    // NodensProductCard,
+    // LeadBlock,
+    NodensFooter,
+    ValuePropositions,
+    // Test,
+    ProductsSlider,
+    LogoScroller,
+  },
   computed: {
     ...mapGetters({
-      navbarHeight: 'ui/navbarHeight',
+      navbarHeight: "ui/navbarHeight",
     }),
+  },
+  watch: {
+    "$route.name": function (value) {
+      if (value.includes("home")) {
+        this.component++;
+      }
+      /* console.log({ value }); */
+    },
   },
   data() {
     return {
-      topics: ['Loans', 'BPNL', 'Financing', 'Cards', 'Banking'],
+      topics: ["Loans", "BPNL", "Financing", "Cards", "Banking"],
       show: {
         show1: false,
         show2: false,
         show3: false,
         show4: false,
       },
+      component: 1,
       stats: [
-        { metric: 'Total Loans Disbursed', value: '$3.5m' },
-        { metric: 'Returns to Investors', value: '$2.2m' },
-        { metric: 'Registered Users', value: '300k+' },
+        { metric: "Total Loans Disbursed", value: "$3.5m" },
+        { metric: "Returns to Investors", value: "$2.2m" },
+        { metric: "Registered Users", value: "300k+" },
         // {metric: 'Total No of Staff', value: '50'},
       ],
       investorLogos: [
-        'allianz.svg',
-        'carrefour.svg',
-        'vinci.svg',
-        'microsoft.svg',
-        'airbnb.svg',
+        "allianz.svg",
+        "carrefour.svg",
+        "vinci.svg",
+        "microsoft.svg",
+        "airbnb.svg",
       ],
       products: [
         {
-          logo: 'nodcredit',
+          logo: "nodcredit",
           product: {
-            title: 'NodCredit',
-            desc: 'Facilitating seamless access to nano loans. Get your loans in less than 24 hours.',
-            link: 'https://nodcredit.com',
+            title: "NodCredit",
+            desc: "Facilitating seamless access to nano loans. Get your loans in less than 24 hours.",
+            link: "https://nodcredit.com",
           },
           productLinks: [
             {
-              text: 'Get Loans',
-              link: 'https://nodcredit.com/loan',
+              text: "Get Loans",
+              link: "https://nodcredit.com/loan",
               linkAlt: null,
             },
             {
-              text: 'Invest',
-              link: 'https://nodcredit.com/invest',
+              text: "Invest",
+              link: "https://nodcredit.com/invest",
               linkAlt: null,
             },
           ],
         },
         {
-          logo: 'nodtransfer',
+          logo: "nodtransfer",
           product: {
-            title: 'NodTransfer',
-            desc: 'The safest and quickest way to transfer money accross borders at competitive rates.',
-            link: 'https://nodtransfer.com',
+            title: "NodTransfer",
+            desc: "The safest and quickest way to transfer money accross borders at competitive rates.",
+            link: "https://nodtransfer.com",
           },
           productLinks: [
             {
-              text: 'Money Transfer',
-              link: 'https://nodtransfer.com',
+              text: "Money Transfer",
+              link: "https://nodtransfer.com",
               linkAlt: null,
             },
             {
-              text: 'Nodtransfer Credit',
-              link: 'https://nodtransfer.com/nodtransfer-credit',
+              text: "Nodtransfer Credit",
+              link: "https://nodtransfer.com/nodtransfer-credit",
               linkAlt: null,
             },
           ],
         },
         {
-          logo: 'nodcheckout',
+          logo: "nodcheckout",
           product: {
-            title: 'NodCheckout',
-            desc: 'A new way to shop. Providing an API for Buy Now, Pay Later shopping experience.',
-            link: 'https://nodcheckout.com',
+            title: "NodCheckout",
+            desc: "A new way to shop. Providing an API for Buy Now, Pay Later shopping experience.",
+            link: "https://nodcheckout.com",
           },
           productLinks: [
             {
-              text: 'Checkout by NodCredit',
-              link: 'http://nodcheckout.com/for-businesses',
+              text: "Checkout by NodCredit",
+              link: "http://nodcheckout.com/for-businesses",
               linkAlt: null,
             },
           ],
@@ -470,33 +681,33 @@ export default {
         //   },
         // },
         {
-          logo: 'nodcash',
+          logo: "nodcash",
           product: {
-            title: 'NodCash App',
-            desc: 'A new way of sending, requesting and spending, combining crypto and leveraging our tech rails, this product sets your money free.',
-            link: 'https://nodcashapp.com',
+            title: "NodCash App",
+            desc: "A new way of sending, requesting and spending, combining crypto and leveraging our tech rails, this product sets your money free.",
+            link: "https://nodcashapp.com",
           },
           productLinks: [
             {
               text: null,
               link: null,
-              linkAlt: 'Private Release - In Beta',
+              linkAlt: "Private Release - In Beta",
             },
           ],
         },
       ],
       leadership: [
         {
-          image: 'lead1.jpeg',
-          title: 'Cofounder, Execution and Management',
-          name: 'Abayomi Olofinlua',
-          linkedIn: 'https://www.linkedin.com/in/abayomi-olofinlua-513aa459',
+          image: "lead1.jpeg",
+          title: "Cofounder, Execution and Management",
+          name: "Abayomi Olofinlua",
+          linkedIn: "https://www.linkedin.com/in/abayomi-olofinlua-513aa459",
         },
         {
-          image: 'eva.jpeg',
-          title: 'Management, Data & Advisory',
-          name: 'Eva Sheluhina',
-          linkedIn: '',
+          image: "eva.jpeg",
+          title: "Management, Data & Advisory",
+          name: "Eva Sheluhina",
+          linkedIn: "",
         },
         // {
         //   image: "lead2.jpg",
@@ -505,16 +716,16 @@ export default {
         //   linkedIn: "https://www.linkedin.com/in/olumide-oluwabiyi-750404a6",
         // },
         {
-          image: 'vitalli.jpeg',
-          title: 'Engineering, Products',
-          name: 'Vitalii Khrabatyn',
-          linkedIn: '',
+          image: "vitalli.jpeg",
+          title: "Engineering, Products",
+          name: "Vitalii Khrabatyn",
+          linkedIn: "",
         },
         {
-          image: 'lead3.jpeg',
-          title: 'Cofounder, Tech and Products',
-          name: 'Tim Chukwuka',
-          linkedIn: 'https://www.linkedin.com/in/timchuks',
+          image: "lead3.jpeg",
+          title: "Cofounder, Tech and Products",
+          name: "Tim Chukwuka",
+          linkedIn: "https://www.linkedin.com/in/timchuks",
         },
       ],
     };
@@ -532,7 +743,20 @@ export default {
     setTimeout(() => {
       this.show.show4 = true;
     }, 1100);
-    console.log({ vuetify: this.$vuetify });
+    // console.log({ vuetify: this.$vuetify });
+    // console.log({ gsap, ScrollTrigger });
+    // gsap.registerPlugin(ScrollTrigger);
+    // const animation = gsap.fromTo(".section", { x: 0 }, { x: "-190vw" });
+    // ScrollTrigger.create({
+    //   trigger: ".products-section",
+    //   animation,
+    //   start: "top 110px",
+    //   pin: ".products-section",
+    //   scrub: true,
+    //   markers: true,
+    //   endTrigger: "end-section",
+    //   end: "bottom top",
+    // });
   },
 };
 </script>

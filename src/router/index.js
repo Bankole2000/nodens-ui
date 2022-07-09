@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Test from '../views/Test.vue';
 import Home from '../views/Home.vue';
 // import PartnershipsPage from '../views/Partnerships.vue';
 import CompanyPage from '../views/Company.vue';
@@ -15,6 +16,11 @@ import Contact from '../views/Contact.vue';
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '/test',
+    name: 'pages.test',
+    component: Test,
+  },
   {
     path: '/',
     name: 'pages.home',
@@ -79,6 +85,9 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
   routes,
 });
 
