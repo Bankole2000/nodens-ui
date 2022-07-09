@@ -3,33 +3,66 @@
     class="home-page"
     :style="{ marginTop: `-${navbarHeight}px`, backgroundColor: `#faf6f8` }"
   >
+    <!-- SECTION: Creating a future -->
     <div
       style="
         min-height: 100vh;
         min-width: 100vw;
         position: relative;
         display: flex;
-        
       "
-      :style="{paddingTop: `${navbarHeight}px`}"
-      
+      :style="{ paddingTop: `${navbarHeight}px` }"
     >
       <v-container>
         <v-row>
           <v-col cols="12">
-            <v-card elevation="0" class="mb-5" :img="require('@/assets/imgs/newcover1.jpeg')" height="40vh" style="border-radius: 16px">
-
+            <v-card
+              elevation="0"
+              class="mb-5"
+              :img="require('@/assets/imgs/newcover1.jpeg')"
+              height="40vh"
+              width="100%"
+              style="border-radius: 16px"
+            >
             </v-card>
           </v-col>
           <v-col cols="6">
             <h1>Creating a Future that is Accessible and Connected.</h1>
           </v-col>
           <v-col cols="6">
-            <div style="height: 100%;">
-              <h4 class="body-copy-l pr-4" style="font-weight: 400 !important; color: #6E7177;">We creating a future that is sustainable! Where you’re in control of money and connected to  resources that help better your life and people around you. Join us as we take incredible leaps to make this possible.</h4>
-              <div style="display: flex; align-items: center; justify-content: start;" class="mt-12">
-                <div class="mr-7" v-for="(topic, i) in topics" :key="i" :style="{borderRight: i < topics.length - 1 ? '2px solid #CCE3FF': 'none'}">
-                  <p style="color: #101010; font-size: 18px; line-height: 22px; font-weight: 400;" class="mb-0 mr-7">{{topic}}</p>
+            <div style="height: 100%">
+              <h4
+                class="body-copy-l pr-4"
+                style="font-weight: 400 !important; color: #6e7177"
+              >
+                We creating a future that is sustainable! Where you’re in
+                control of money and connected to resources that help better
+                your life and people around you. Join us as we take incredible
+                leaps to make this possible.
+              </h4>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: start;
+                "
+                class="mt-12"
+              >
+                <div
+                  class="mr-7"
+                  v-for="(topic, i) in topics"
+                  :key="i"
+                  :style="{
+                    borderRight:
+                      i < topics.length - 1 ? '2px solid #CCE3FF' : 'none',
+                  }"
+                >
+                  <p
+                    style="font-size: 18px; line-height: 22px; font-weight: 400"
+                    class="mb-0 mr-7 black-text"
+                  >
+                    {{ topic }}
+                  </p>
                 </div>
               </div>
             </div>
@@ -37,29 +70,150 @@
         </v-row>
       </v-container>
     </div>
-    <div style="width: 100vw; height: calc(100vh); position: relative; display: flex;">
-      <div style="flex: 1; height: 100%; background: #101010;"></div>
-      <div style="flex: 1; height: 100%; background-size: cover; background-position: center center;" :style="{backgroundImage: `url(${require('@/assets/imgs/newcover2.jpeg')})`}"></div>
-      <div style="position: absolute; top: 0; left: 0; width: 100vw;">
+    <!-- TODO: SECTION: Scrolling logos -->
+    <div class="my-16 pb-16">
+      <LogoScroller />
+    </div>
+    <!-- TODO: SECTION: Banking the Unbanked -->
+    <div class="my-16 pb-8">
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <div class="d-flex align-start">
+              <h3 class="text-h3 mb-6 pt-2 font-weight-bold black--text">
+                Banking the
+                <!-- <span class="bg-colored-text">&nbsp;Unbanked.&nbsp;</span> -->
+              </h3>
+              <div style="position: relative" class="ml-2">
+                <div style="background-color: #fdd5b9">
+                  <h3
+                    class="text-h3 mt-0 py-2 font-weight-bold transparent--text"
+                  >
+                    &nbsp; Unbanked.
+                  </h3>
+                </div>
+                <div style="position: absolute; top: -50px; left: 10px">
+                  <h3 class="text-h3 mb-6 py-2 font-weight-bold black--text">
+                    &nbsp; Unbanked.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+      <ValuePropositions />
+    </div>
+    <!-- SECTION: Our mission -->
+    <div
+      class="our-mission"
+      style="
+        width: 100vw;
+        height: calc(100vh);
+        position: relative;
+        display: flex;
+      "
+    >
+      <div style="flex: 1; height: 100%" class="black-bg"></div>
+      <div
+        style="
+          flex: 1;
+          height: 100%;
+          background-size: cover;
+          background-position: center center;
+        "
+        :style="{
+          backgroundImage: `url(${require('@/assets/imgs/newcover2.jpeg')})`,
+        }"
+      ></div>
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          min-height: 100vw;
+        "
+      >
         <v-container>
           <v-row>
             <v-col cols="6">
               <div class="mt-25">
-                <p class="mb-4" style="font-size: 16px; line-height: 18.91px; letter: 12%; font-weight: 600; color: #6E7177;">OUR MISSION</p>
-                <h2 style="color: white;" class="mb-6">Providing globally competitive services with a net positive on customers.</h2>
-                <p class="pr-13 mb-16" style="font-size: 18px; line-height: 21.28px; font-weight: 400; color: #F4F6F8; letter: 1%;">Centered around good, we are seeking to provide customer-first services that ensure businesses are making profits rather than spending time worrying about capital to run their start-up.</p>
+                <p
+                  class="mb-4"
+                  style="
+                    font-size: 16px;
+                    line-height: 18.91px;
+                    letter: 12%;
+                    font-weight: 600;
+                    color: #6e7177;
+                  "
+                >
+                  OUR MISSION
+                </p>
+                <h2 style="color: white" class="mb-6">
+                  Providing globally competitive services with a net positive on
+                  customers.
+                </h2>
+                <p
+                  class="pr-13 mb-16"
+                  style="
+                    font-size: 18px;
+                    line-height: 21.28px;
+                    font-weight: 400;
+                    color: #f4f6f8;
+                    letter: 1%;
+                  "
+                >
+                  Centered around good, we are seeking to provide customer-first
+                  services that ensure businesses are making profits rather than
+                  spending time worrying about capital to run their start-up.
+                </p>
                 <div class="pt-16 d-flex align-center">
-                  <div style="flex: 1;">
-                    <h2 style="color: white;" class="mb-1">$3.5m</h2>
-                    <p style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Worth of loans disbursed</p>
+                  <div style="flex: 1">
+                    <h2 style="color: white" class="mb-1">$3.5m</h2>
+                    <p
+                      style="
+                        font-size: 18px;
+                        line-height: 21.28px;
+                        letter: 1%;
+                        font-weight: 400;
+                        color: #b6b7be;
+                      "
+                      class="pr-5"
+                    >
+                      Worth of loans disbursed
+                    </p>
                   </div>
-                  <div style="flex: 1;">
-                    <h2 style="color: white;">$2.2m</h2>
-                    <p class="pr-16" style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Returns to investors</p>
+                  <div style="flex: 1">
+                    <h2 style="color: white">$2.2m</h2>
+                    <p
+                      class="pr-16"
+                      style="
+                        font-size: 18px;
+                        line-height: 21.28px;
+                        letter: 1%;
+                        font-weight: 400;
+                        color: #b6b7be;
+                      "
+                    >
+                      Returns to investors
+                    </p>
                   </div>
-                  <div style="flex: 1;">
-                    <h2 style="color: white;">300k+</h2>
-                    <p style="font-size: 18px; line-height: 21.28px; letter: 1%; font-weight: 400; color: #B6B7BE;">Customers onboarded</p>
+                  <div style="flex: 1">
+                    <h2 style="color: white">300k+</h2>
+                    <p
+                      style="
+                        font-size: 18px;
+                        line-height: 21.28px;
+                        letter: 1%;
+                        font-weight: 400;
+                        color: #b6b7be;
+                      "
+                      class="pr-5"
+                    >
+                      Customers onboarded
+                    </p>
                   </div>
                 </div>
               </div>
@@ -68,30 +222,182 @@
           </v-row>
         </v-container>
       </div>
-
     </div>
-    <div style="width: 100vw;">
+    <!-- SECTION: Our products -->
+    <div class="mt-16 pt-16">
       <v-container>
         <v-row>
           <v-col cols="12">
-            <div class="pa-24" style="background-color: #101010; border-radius: 24px;">
-              <v-row>
-                <v-col cols="7"></v-col>
+            <div class="d-flex align-start">
+              <h3 class="text-h3 mb-6 pt-2 font-weight-bold black--text">
+                Putting Customers
+                <!-- <span class="bg-colored-text">&nbsp;Unbanked.&nbsp;</span> -->
+              </h3>
+              <div style="position: relative" class="ml-2">
+                <div style="background-color: #fdd5b9">
+                  <h3
+                    class="text-h3 mt-0 py-2 font-weight-bold transparent--text"
+                  >
+                    &nbsp; First.
+                  </h3>
+                </div>
+                <div style="position: absolute; top: -50px; left: 10px">
+                  <h3 class="text-h3 mb-6 py-2 font-weight-bold black--text">
+                    &nbsp; First.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+      <ProductsSlider />
+    </div>
+    <!-- <div>
+      <ProductsSection :key="component" />
+    </div> -->
+    <!-- TODO: SECTION: Here's what people are saying -->
+    <div style="width: 100vw" class="my-16 pb-16">
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <div class="pa-24 black-bg" style="border-radius: 24px">
+              <v-row align="center">
+                <v-col cols="7">
+                  <v-card style="margin-bottom: 20vh" color="transparent">
+                    <div style="width: 100px" class="mx-auto">
+                      <div style="position: relative" class="ml-n16">
+                        <v-hover v-slot:default="{ hover }">
+                          <div
+                            style="position: absolute; top: 0; left: 0"
+                            :style="{ zIndex: hover ? 1 : 1 }"
+                          >
+                            <v-card rounded="xl" class="px-10 pt-10 pb-2">
+                              <v-card-text class="pa-0">
+                                <p
+                                  class="text-h5 black-text"
+                                  style="line-height: 1.8rem !important"
+                                >
+                                  "We trusted the foks at
+                                  <strong>NodensInc</strong> to integrate some
+                                  of our solutions and they fit so perfectly.
+                                  We're so glad we got to work with them and
+                                  we're hopeful to partner on more amazing
+                                  products in times to come"
+                                </p>
+                              </v-card-text>
+                              <v-card-actions class="pa-0">
+                                <v-list two-line class="py-0">
+                                  <v-list-item class="pa-0">
+                                    <v-list-item-avatar>
+                                      <v-avatar
+                                        color="grey lighten-2"
+                                      ></v-avatar>
+                                    </v-list-item-avatar>
+                                    <v-list-item-content class="py-0">
+                                      <v-list-item-title
+                                        >James Jones</v-list-item-title
+                                      >
+                                      <v-list-item-subtitle
+                                        >Growth Manager</v-list-item-subtitle
+                                      >
+                                    </v-list-item-content>
+                                    <v-list-item-icon>
+                                      <div
+                                        style="height: 100%"
+                                        class="d-flex align-center"
+                                      >
+                                        <v-img
+                                          class="mt-4"
+                                          :src="
+                                            require('@/assets/imgs/logos/stripe-black.svg')
+                                          "
+                                        ></v-img>
+                                      </div>
+                                    </v-list-item-icon>
+                                  </v-list-item>
+                                </v-list>
+                              </v-card-actions>
+                            </v-card>
+                          </div>
+                        </v-hover>
+                        <v-hover v-slot:default="{ hover }">
+                          <div
+                            style="position: absolute; top: 13vh; left: 8vh"
+                            :style="{ zIndex: hover ? 1 : 0 }"
+                          >
+                            <v-card
+                              rounded="xl"
+                              class="px-10 pt-10 pb-2 primary"
+                            >
+                              <v-card-text class="pa-0">
+                                <p
+                                  class="text-h5 white--text"
+                                  style="line-height: 1.8rem !important"
+                                >
+                                  "We trusted the foks at
+                                  <strong>NodensInc</strong> to integrate some
+                                  of our solutions and they fit so perfectly.
+                                  We're so glad we got to work with them and
+                                  we're hopeful to partner on more amazing
+                                  products in times to come"
+                                </p>
+                              </v-card-text>
+                              <v-card-actions class="pa-0">
+                                <v-list two-line class="py-0 primary">
+                                  <v-list-item class="pa-0 white--text">
+                                    <v-list-item-avatar>
+                                      <v-avatar
+                                        color="grey lighten-2"
+                                      ></v-avatar>
+                                    </v-list-item-avatar>
+                                    <v-list-item-content class="py-0">
+                                      <v-list-item-title
+                                        >Stephen King</v-list-item-title
+                                      >
+                                      <v-list-item-subtitle
+                                        class="grey--text text--lighten-2"
+                                        >Founder</v-list-item-subtitle
+                                      >
+                                    </v-list-item-content>
+                                    <v-list-item-icon>
+                                      <div
+                                        style="height: 100%"
+                                        class="d-flex align-center"
+                                      >
+                                        <v-img
+                                          class="mt-4"
+                                          :src="
+                                            require('@/assets/imgs/logos/king-white.svg')
+                                          "
+                                        ></v-img>
+                                      </div>
+                                    </v-list-item-icon>
+                                  </v-list-item>
+                                </v-list>
+                              </v-card-actions>
+                            </v-card>
+                          </div>
+                        </v-hover>
+                      </div>
+                    </div>
+                  </v-card>
+                </v-col>
                 <v-col cols="5">
                   <div class="d-flex align-center">
-                    <h2 style="color: white;">Here's what people are saying about us</h2>
+                    <h2 style="color: white">
+                      Here's what people are saying about us
+                    </h2>
                   </div>
                 </v-col>
-                
               </v-row>
-
             </div>
           </v-col>
         </v-row>
       </v-container>
     </div>
-
-    <div style="position: relative">
+    <!-- TODO: SECTION: Footer -->
+    <!-- <div style="position: relative">
       <v-container>
         <v-row class="py-8 my-4">
           <v-col cols="12">
@@ -119,9 +425,7 @@
                   </template>
                 </v-img>
               </div>
-              <!-- <v-overlay :absolute="true" :opacity="0.1" :value="true">
-                <v-btn color="orange lighten-2"> Hide Overlay </v-btn>
-              </v-overlay> -->
+              
             </v-card>
             <v-card elevation="0" v-else>
               <v-row align="center" justify="center">
@@ -156,7 +460,6 @@
           </v-col>
         </v-row>
       </v-container>
-      <!-- background-color: rgba(255, 198, 122, 0.753); -->
       <div
         style="
           position: absolute;
@@ -167,8 +470,8 @@
           backdrop-filter: blur(20px);
         "
       ></div>
-    </div>
-    <v-container>
+    </div> -->
+    <!-- <v-container>
       <v-row class="mb-16">
         <v-col cols="12">
           <p
@@ -176,8 +479,7 @@
             class="mt-8 font-weight-regular accent--text"
             style="line-height: 8rem; font-size: 5rem"
           >
-            <!-- Providing speedy and responsive financial services while generating
-            substantial value. -->
+            
             <span
               class="
                 font-weight-bold
@@ -251,36 +553,56 @@
           <LeadBlock :lead="lead" />
         </v-col>
       </v-row>
-      <v-divider></v-divider>
-      <SmallFooter />
-    </v-container>
+    </v-container> -->
+    <NodensFooter />
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
+import LogoScroller from "../components/blocks/LogoScroller.vue";
+import ProductsSlider from "../components/blocks/ProductsSlider.vue";
+import ValuePropositions from "../components/blocks/ValuePropositions.vue";
 // import IconCard from "../components/blocks/IconCard.vue";
-import LeadBlock from "../components/blocks/LeadBlock.vue";
-import NodensProductCard from "../components/blocks/NodensProductCard.vue";
-import SmallFooter from "../components/common/SmallFooter.vue";
-
+// import LeadBlock from "../components/blocks/LeadBlock.vue";
+// import NodensProductCard from "../components/blocks/NodensProductCard.vue";
+import NodensFooter from "../components/common/NodensFooter.vue";
+// import Test from "./Test.vue";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
-
-  components: { NodensProductCard, LeadBlock, SmallFooter },
+  components: {
+    // NodensProductCard,
+    // LeadBlock,
+    NodensFooter,
+    ValuePropositions,
+    // Test,
+    ProductsSlider,
+    LogoScroller,
+  },
   computed: {
     ...mapGetters({
       navbarHeight: "ui/navbarHeight",
     }),
   },
+  watch: {
+    "$route.name": function (value) {
+      if (value.includes("home")) {
+        this.component++;
+      }
+      /* console.log({ value }); */
+    },
+  },
   data() {
     return {
-      topics: ['Loans', 'BPNL', 'Financing', 'Cards', 'Banking'],
+      topics: ["Loans", "BPNL", "Financing", "Cards", "Banking"],
       show: {
         show1: false,
         show2: false,
         show3: false,
         show4: false,
       },
+      component: 1,
       stats: [
         { metric: "Total Loans Disbursed", value: "$3.5m" },
         { metric: "Returns to Investors", value: "$2.2m" },
@@ -421,7 +743,20 @@ export default {
     setTimeout(() => {
       this.show.show4 = true;
     }, 1100);
-    console.log({ vuetify: this.$vuetify });
+    // console.log({ vuetify: this.$vuetify });
+    // console.log({ gsap, ScrollTrigger });
+    // gsap.registerPlugin(ScrollTrigger);
+    // const animation = gsap.fromTo(".section", { x: 0 }, { x: "-190vw" });
+    // ScrollTrigger.create({
+    //   trigger: ".products-section",
+    //   animation,
+    //   start: "top 110px",
+    //   pin: ".products-section",
+    //   scrub: true,
+    //   markers: true,
+    //   endTrigger: "end-section",
+    //   end: "bottom top",
+    // });
   },
 };
 </script>

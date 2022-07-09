@@ -1,0 +1,643 @@
+[
+	{
+		"name": "Abbey National Treasury Services"
+	},
+	{
+		"name": "ABC International Bank"
+	},
+	{
+		"name": "Access Bank"
+	},
+	{
+		"name": "Adam & Company"
+	},
+	{
+		"name": "ADIB"
+	},
+	{
+		"name": "Ahli United Bank"
+	},
+	{
+		"name": "AIB Group"
+	},
+  {
+		"name": "Airdrie Savings Bank"
+	},
+  {
+		"name": "Al Rayan Bank"
+	},
+  {
+		"name": "Aldermore Bank"
+	},
+  {
+		"name": "Alliance Trust Savings"
+	},
+  {
+		"name": "Alpha Bank London"
+	},
+  {
+		"name": "ANZ Bank"
+	},
+  {
+		"name": "Arbuthnot Latham & Co"
+	},
+  {
+		"name": "Atom Bank"
+	},
+  {
+		"name": "Axis Bank"
+	},
+  {
+		"name": "Bank and Clients"
+	},
+  {
+		"name": "Bank Leumi"
+	},
+  {
+		"name": "Bank Mandiri"
+	},
+  {
+		"name": "Bank of America Merrill Lynch"
+	},
+  {
+		"name": "Bank of Beirut"
+	},
+  {
+		"name": "Bank of Ceylon"
+	},
+  {
+		"name": "Bank of China"
+	},
+  {
+		"name": "Bank of Communications"
+	},
+  {
+		"name": "Bank of Cyprus"
+	},
+  {
+		"name": "Bank of Ireland"
+	},
+  {
+		"name": "Bank of London and The Middle East"
+	},
+  {
+		"name": "Bank of New York Mellon"
+	},
+  {
+		"name": "Bank of Scotland"
+	},
+  {
+		"name": "Bank of the Philippine Islands"
+	},
+  {
+		"name": "Bank Saderat"
+	},
+  {
+		"name": "Bank Sepah International"
+	},
+  {
+		"name": "Barclays Bank"
+	},
+  {
+		"name": "Bath Building Society"
+	},
+  {
+		"name": "Beverley Building Society"
+	},
+  {
+		"name": "BFC Exchange"
+	},
+  {
+		"name": "BIRA Bank"
+	},
+  {
+		"name": "BMCE Bank"
+	},
+  {
+		"name": "British Arab Commercial Bank"
+	},
+  {
+		"name": "Brown Shipley & Co"
+	},
+  {
+		"name": "Buckinghamshire Building Society"
+	},
+  {
+		"name": "C Hoare & Co"
+	},
+  {
+		"name": "CAF Bank"
+	},
+  {
+		"name": "Cambridge & Counties Bank"
+	},
+  {
+		"name": "Cambridge Building Society"
+	},
+  {
+		"name": "Cater Allen"
+	},
+  {
+		"name": "Charity Bank"
+	},
+  {
+		"name": "Charter Court Financial Services"
+	},
+  {
+		"name": "China Construction Bank"
+	},
+  {
+		"name": "Chorley & District Building Society"
+	},
+  {
+		"name": "CIBC World Markets"
+	},
+  {
+		"name": "ClearBank"
+	},
+  {
+		"name": "Close Brothers"
+	},
+  {
+		"name": "Clydesdale Bank"
+	},
+  {
+		"name": "Co-operative Bank"
+	},
+  {
+		"name": "Coconut"
+	},
+  {
+		"name": "Coutts & Company"
+	},
+  {
+		"name": "Coventry Building Society"
+	},
+  {
+		"name": "Credit Suisse"
+	},
+  {
+		"name": "Credit Suisse International"
+	},
+  {
+		"name": "Crown Agents Bank"
+	},
+  {
+		"name": "Cumberland Building Society"
+	},
+  {
+		"name": "Darlington Building Society"
+	},
+  {
+		"name": "DB UK Bank"
+	},
+  {
+		"name": "Diamond Bank"
+	},
+  {
+		"name": "Dozens"
+	},
+  {
+		"name": "Dudley Building Society"
+	},
+  {
+		"name": "Duncan Lawrie"
+	},
+  {
+		"name": "Earl Shilton Building Society"
+	},
+  {
+		"name": "Ecology Building Society"
+	},
+  {
+		"name": "EFG Private Bank"
+	},
+  {
+		"name": "Europe Arab Bank"
+	},
+  {
+		"name": "FBN Bank"
+	},
+  {
+		"name": "FCE Bank"
+	},
+  {
+		"name": "FCMB Bank"
+	},
+  {
+		"name": "Fidor"
+	},
+  {
+		"name": "First Direct"
+	},
+  {
+		"name": "Furness Building Society"
+	},
+  {
+		"name": "Gatehouse Bank"
+	},
+  {
+		"name": "GE Capital Bank"
+	},
+  {
+		"name": "Ghana International Bank"
+	},
+  {
+		"name": "Goldman Sachs International Bank"
+	},
+  {
+		"name": "Guaranty Trust Bank"
+	},
+  {
+		"name": "Gulf International Bank"
+	},
+  {
+		"name": "Habib Bank Zurich"
+	},
+  {
+		"name": "Habibsons Bank"
+	},
+  {
+		"name": "Halifax"
+	},
+  {
+		"name": "Hampden & Co"
+	},
+  {
+		"name": "Hampshire Trust Bank"
+	},
+  {
+		"name": "Hanley Economic Building Society"
+	},
+  {
+		"name": "Harpenden Building Society"
+	},
+  {
+		"name": "Harrods Bank"
+	},
+  {
+		"name": "Havin Bank"
+	},
+  {
+		"name": "Hinckley & Rugby Building Society"
+	},
+  {
+		"name": "HSBC Bank"
+	},
+  {
+		"name": "HSBC Private Bank"
+	},
+  {
+		"name": "HSBC Trust Company"
+	},
+  {
+		"name": "ICBC"
+	},
+  {
+		"name": "ICBC Standard Bank"
+	},
+  {
+		"name": "ICICI Bank"
+	},
+  {
+		"name": "Ikano Bank"
+	},
+  {
+		"name": "Investec Bank"
+	},
+  {
+		"name": "Ipswich Building Society"
+	},
+  {
+		"name": "Itau BBA International"
+	},
+  {
+		"name": "J.P. Morgan Europe"
+	},
+  {
+		"name": "J.P. Morgan International Bank"
+	},
+  {
+		"name": "J.P. Morgan Securities"
+	},
+  {
+		"name": "Jordan International Bank"
+	},
+  {
+		"name": "Julian Hodge Bank"
+	},
+  {
+		"name": "Kexim Bank"
+	},
+  {
+		"name": "Kingdom Bank"
+	},
+  {
+		"name": "Kleinwort Benson Bank"
+	},
+  {
+		"name": "Kookmin Bank"
+	},
+  {
+		"name": "Leeds Building Society"
+	},
+  {
+		"name": "Leek United Building Society"
+	},
+  {
+		"name": "Lloyds Bank"
+	},
+  {
+		"name": "Lloyds Bank Private Banking"
+	},
+  {
+		"name": "Loot"
+	},
+  {
+		"name": "Loughborough Building Society"
+	},
+  {
+		"name": "Macquarie Bank"
+	},
+  {
+		"name": "Manchester Building Society"
+	},
+  {
+		"name": "Mansfield Building Society"
+	},
+  {
+		"name": "Marcus by Goldman Sachs"
+	},
+  {
+		"name": "Market Harborough Building Society"
+	},
+  {
+		"name": "Marks & Spencer"
+	},
+  {
+		"name": "Marsden Building Society"
+	},
+  {
+		"name": "Masthaven Bank"
+	},
+  {
+		"name": "Melli Bank"
+	},
+  {
+		"name": "Methodist Chapel Aid"
+	},
+  {
+		"name": "Metro Bank"
+	},
+  {
+		"name": "Mizuho International"
+	},
+  {
+		"name": "Monese"
+	},
+  {
+		"name": "Monmouthshire Building Society"
+	},
+  {
+		"name": "Monzo Bank"
+	},
+  {
+		"name": "Morgan Stanley Bank"
+	},
+  {
+		"name": "N26"
+	},
+  {
+		"name": "National Bank of Egypt"
+	},
+  {
+		"name": "National Bank of Kuwait"
+	},
+  {
+		"name": "National Counties Building Society"
+	},
+  {
+		"name": "Nationwide"
+	},
+  {
+		"name": "NatWest"
+	},
+  {
+		"name": "Newbury Building Society"
+	},
+  {
+		"name": "Newcastle Building Society"
+	},
+  {
+		"name": "Nomura Bank"
+	},
+  {
+		"name": "Northern Bank"
+	},
+  {
+		"name": "Northern Trust"
+	},
+  {
+		"name": "Nottingham Building Society"
+	},
+  {
+		"name": "OakNorth Bank"
+	},
+  {
+		"name": "OneSavings Bank"
+	},
+  {
+		"name": "Paragon Bank"
+	},
+  {
+		"name": "PCF Group"
+	},
+  {
+		"name": "Penrith Building Society"
+	},
+  {
+		"name": "Persia International Bank"
+	},
+  {
+		"name": "Philippine National Bank"
+	},
+  {
+		"name": "Principality Building Society"
+	},
+  {
+		"name": "Progressive Building Society"
+	},
+  {
+		"name": "Punjab National Bank"
+	},
+  {
+		"name": "QIB"
+	},
+  {
+		"name": "R. Raphael & Sons"
+	},
+  {
+		"name": "Rathbone Investment Management"
+	},
+  {
+		"name": "RBC Europe"
+	},
+  {
+		"name": "Reliance Bank"
+	},
+  {
+		"name": "Revolut"
+	},
+  {
+		"name": "Royal Bank of Scotland"
+	},
+  {
+		"name": "Saffron Building Society"
+	},
+  {
+		"name": "Sainsbury’s Bank"
+	},
+  {
+		"name": "Santander"
+	},
+  {
+		"name": "Schroder & Co"
+	},
+  {
+		"name": "Scotiabank Europe"
+	},
+  {
+		"name": "Scottish Building Society"
+	},
+  {
+		"name": "Scottish Widows Bank"
+	},
+  {
+		"name": "Secure Trust Bank"
+	},
+  {
+		"name": "SG Hambros Bank"
+	},
+  {
+		"name": "Shawbrook Bank"
+	},
+  {
+		"name": "Skipton Building Society"
+	},
+  {
+		"name": "Smile"
+	},
+  {
+		"name": "Smith & Williamson"
+	},
+  {
+		"name": "Sonali Bank"
+	},
+  {
+		"name": "Stafford Railway Building Society"
+	},
+  {
+		"name": "Standard Chartered Bank"
+	},
+  {
+		"name": "Starling Bank"
+	},
+  {
+		"name": "Sumitomo Mitsui Banking Corporation Europe"
+	},
+  {
+		"name": "Swansea Building Society"
+	},
+  {
+		"name": "Tandem Bank"
+	},
+  {
+		"name": "TD Bank Europe"
+	},
+  {
+		"name": "Teachers Building Society"
+	},
+  {
+		"name": "Tesco Bank"
+	},
+  {
+		"name": "The Melton Building Society"
+	},
+  {
+		"name": "ThinkMoney"
+	},
+  {
+		"name": "Tide"
+	},
+  {
+		"name": "Tipton & Coseley Building Society"
+	},
+  {
+		"name": "Triodos"
+	},
+  {
+		"name": "TSB Bank"
+	},
+  {
+		"name": "Turkish Bank"
+	},
+  {
+		"name": "UBS"
+	},
+  {
+		"name": "Ulster Bank"
+	},
+  {
+		"name": "Union Bank"
+	},
+  {
+		"name": "Union Bank of India"
+	},
+  {
+		"name": "United National Bank"
+	},
+  {
+		"name": "United Trust Bank"
+	},
+  {
+		"name": "Unity Trust Bank"
+	},
+  {
+		"name": "Vanquis Bank"
+	},
+  {
+		"name": "Vernon Building Society"
+	},
+  {
+		"name": "Virgin Money"
+	},
+  {
+		"name": "VTB Capital"
+	},
+  {
+		"name": "Weatherbys Bank"
+	},
+  {
+		"name": "Wesleyan Bank"
+	},
+  {
+		"name": "West Bromwich Building Society"
+	},
+  {
+		"name": "Westpac"
+	},
+  {
+		"name": "Wyelands Bank"
+	},
+  {
+		"name": "Yorkshire Building Society"
+	},
+  {
+		"name": "Zenith Bank"
+	},
+  {
+		"name": "Zopa"
+	}
+
+
+]
